@@ -1,0 +1,475 @@
+
+
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+#parkfinderContainer {
+	background-color: #eee;
+	margin: 0 auto;
+	width: 870px;
+	border: 1px solid darkgreen;
+	height: 630px;
+	position: relative;
+}
+
+#parkfinderContainer > div {
+	float: left;
+	width: 50%;
+}
+
+#mapWrap {
+	position: relative;
+}
+
+img#map {
+	width: 100%;
+	height: 100%;
+	height: 628px;
+}
+
+/***********park pointers!*****************/
+
+#mapWrap .parkPointer {
+	position: absolute;
+	color: #66A266;
+	color: #006633;
+	font-size: 20px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#mapWrap .parkPointer:hover, #mapWrap .parkPointer:focus, #mapWrap .parkPointer:active {
+	transform:scale(1.3);
+	color: #336600;
+}
+
+#mapWrap .parkPointer.clickedPointer {
+	color: #ff6600 !important;
+	transform:scale(1.3);
+	z-index: 1;
+}
+
+/*********pointer locations***********/
+
+#mapWrap .parkPointer#elmorePointer {
+	top: 18%;
+	right: 54%;
+}
+
+#mapWrap .parkPointer#grrPointer {
+	top: 15%;
+	right: 53%;
+}
+#mapWrap .parkPointer#crystallakePointer {
+	top: 10%;
+	right: 38%;
+}
+#mapWrap .parkPointer#brightonPointer {
+	top: 7%;
+	right: 25%;
+}
+#mapWrap .parkPointer#maidstonePointer {
+	top: 13%;
+	right: 15%;
+}
+#mapWrap .parkPointer#smuggsPointer {
+	top: 19%;
+	right: 65%;
+}
+#mapWrap .parkPointer#waterburycenterPointer {
+	top: 25%;
+	right: 62%;
+}
+#mapWrap .parkPointer#littleriverPointer {
+	top: 25%;
+	right: 65%;
+}
+#mapWrap .parkPointer#underhillPointer {
+	top: 19%;
+	right: 68%;
+}
+#mapWrap .parkPointer#lakecarmiPointer {
+	top: .4%;
+	right: 68.6%;
+}
+#mapWrap .parkPointer#alburgdunesPointer {
+	top: 4%;
+	right: 87%;
+}
+#mapWrap .parkPointer#northheroPointer {
+	top: 2.2%;
+	right: 84.7%;
+}
+#mapWrap .parkPointer#knightislandPointer {
+	top: 7%;
+	right: 84.7%;
+}
+#mapWrap .parkPointer#woodsislandPointer {
+	top: 7.5%;
+	right: 83%;
+}
+#mapWrap .parkPointer#killkarePointer {
+	top: 8%;
+	right: 82%;
+}
+#mapWrap .parkPointer#burtonislandPointer {
+	top: 9%;
+	right: 83%;
+}
+#mapWrap .parkPointer#knightpointPointer {
+	top: 9%;
+	right: 87%;
+}
+#mapWrap .parkPointer#grandislePointer {
+	top: 12%;
+	right: 87.5%;
+}
+#mapWrap .parkPointer#sandbarPointer {
+	top: 15%;
+	right: 84%;
+}
+#mapWrap .parkPointer#niquettebayPointer {
+	top: 17%;
+	right: 83%;
+}
+#mapWrap .parkPointer#mtphiloPointer {
+	top: 31%;
+	right: 84%;
+}
+#mapWrap .parkPointer#camelshumpPointer {
+	top: 28%;
+	right: 68.5%;
+}
+/**************************************/
+
+#mapWrap .parkTitle {
+	position: absolute;
+	z-index: 2;
+	background-color: #eee;
+	color: #333;
+	font-size: 10px;
+	padding: 3px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	display: none;
+}
+
+/****************title locations!*****************/
+/*elmore*/
+#mapWrap .parkTitle#elmoreTitle {
+	top: 9%;
+	right: 54%;
+}
+#elmoreWrap:hover .parkTitle#elmoreTitle {
+	display: block;
+}
+/*grr*/
+#mapWrap .parkTitle#grrTitle {
+	top: 6%;
+	right: 41%;
+}
+#grrWrap:hover .parkTitle#grrTitle {
+	display: block;
+}
+/*crystal lake*/
+#mapWrap .parkTitle#crystallakeTitle {
+	top: 1%;
+	right: 28%;
+}
+#crystallakeWrap:hover .parkTitle#crystallakeTitle {
+	display: block;
+}
+/*brighton*/
+#mapWrap .parkTitle#brightonTitle {
+	top: -2%;
+	right: 13%;
+}
+#brightonWrap:hover .parkTitle#brightonTitle {
+	display: block;
+}
+/*maidstone*/
+#mapWrap .parkTitle#maidstoneTitle {
+	top: 4%;
+	right: 3%;
+}
+#maidstoneWrap:hover .parkTitle#maidstoneTitle {
+	display: block;
+}
+/*smuggs*/
+#mapWrap .parkTitle#smuggsTitle {
+	top: 10%;
+	right: 53%;
+}
+#smuggsWrap:hover .parkTitle#smuggsTitle {
+	display: block;
+}
+/*waterbury center*/
+#mapWrap .parkTitle#waterburycenterTitle {
+	top: 16%;
+	right: 50%;
+}
+#waterburycenterWrap:hover .parkTitle#waterburycenterTitle {
+	display: block;
+}
+/*little river*/
+#mapWrap .parkTitle#littleriverTitle {
+	top: 16%;
+	right: 52%;
+}
+#littleriverWrap:hover .parkTitle#littleriverTitle {
+	display: block;
+}
+/*underhill*/
+#mapWrap .parkTitle#underhillTitle {
+	top: 10%;
+	right: 56%;
+}
+#underhillWrap:hover .parkTitle#underhillTitle {
+	display: block;
+}
+/*lake carmi*/
+#mapWrap .parkTitle#lakecarmiTitle {
+	top: -1%;
+	right: 40%;
+}
+#lakecarmiWrap:hover .parkTitle#lakecarmiTitle {
+	display: block;
+}
+/*alburg dunes*/
+#mapWrap .parkTitle#alburgdunesTitle {
+	top: -3%;
+	right: 70%;
+}
+#alburgdunesWrap:hover .parkTitle#alburgdunesTitle {
+	display: block;
+}
+/*north hero*/
+#mapWrap .parkTitle#northheroTitle {
+	top: -4%;
+	right: 70%;
+}
+#northheroWrap:hover .parkTitle#northheroTitle {
+	display: block;
+}
+/*knight island*/
+#mapWrap .parkTitle#knightislandTitle {
+	top: -4%;
+	right: 70%;
+}
+#knightislandWrap:hover .parkTitle#knightislandTitle {
+	display: block;
+}
+/*woods island*/
+#mapWrap .parkTitle#woodsislandTitle {
+	top: -4%;
+	right: 70%;
+}
+#woodsislandWrap:hover .parkTitle#woodsislandTitle {
+	display: block;
+}
+/*kill kare*/
+#mapWrap .parkTitle#killkareTitle {
+	top: -4%;
+	right: 70%;
+}
+#killkareWrap:hover .parkTitle#killkareTitle {
+	display: block;
+}
+/*burton island*/
+#mapWrap .parkTitle#burtonislandTitle {
+	top: -4%;
+	right: 70%;
+}
+#burtonislandWrap:hover .parkTitle#burtonislandTitle {
+	display: block;
+}
+/*knight point*/
+#mapWrap .parkTitle#knightpointTitle {
+	top: -4%;
+	right: 70%;
+}
+#knightpointWrap:hover .parkTitle#knightpointTitle {
+	display: block;
+}
+/*grand isle*/
+#mapWrap .parkTitle#grandisleTitle {
+	top: 10%;
+	right: 60%;
+}
+#grandisleWrap:hover .parkTitle#grandisleTitle {
+	display: block;
+}
+/*sand bar*/
+#mapWrap .parkTitle#sandbarTitle {
+	top: 10%;
+	right: 60%;
+}
+#sandbarWrap:hover .parkTitle#sandbarTitle {
+	display: block;
+}
+/*niquette bay*/
+#mapWrap .parkTitle#niquettebayTitle {
+	top: 10%;
+	right: 60%;
+}
+#niquettebayWrap:hover .parkTitle#niquettebayTitle {
+	display: block;
+}
+/*mt philo*/
+#mapWrap .parkTitle#mtphiloTitle {
+	top: 24%;
+	right: 70%;
+}
+#mtphiloWrap:hover .parkTitle#mtphiloTitle {
+	display: block;
+}
+/*camel's hump*/
+#mapWrap .parkTitle#camelshumpTitle {
+	top: 19%;
+	right: 55%;
+}
+#camelshumpWrap:hover .parkTitle#camelshumpTitle {
+	display: block;
+}
+/******************************************/
+
+.parkInfo {
+	background-color: #fff;
+	padding: 10px 20px;
+	position: absolute;
+	width: 325px !important;
+	left: 40px;
+	top: 150px;
+	border: 1px solid darkgreen;
+	display: none;
+}
+
+.parkInfo.downOne {
+	top: 215px;
+}
+
+.infoShow {
+	display: block;
+}
+
+.parkInfo .closeBox {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	color: #999;
+	cursor: pointer;
+}
+
+.parkInfo p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.parkInfo p.parkName {
+	font-weight: bold;
+	color: #006633;
+	font-size: 16px;
+}
+
+.parkInfo p.parkPhone, .parkInfo p.parkCity {
+	font-style: italic;
+	font-size: 12px;
+}
+
+.parkInfo .iconsWrap {
+	margin-top: 20px;
+}
+
+.parkInfo .iconsWrap img {
+	width: 28px;
+	margin-bottom: 5px;
+}
+
+#amenitiesWrap {
+	background-image: url(images/green-2d-shield.png);
+}
+
+#amenitiesList {
+	padding: 30px 20px;
+	height: 100%;
+	background: rgba(238,238,238,.95);
+}
+
+#amenitiesList p {
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #999;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#amenitiesList ul {
+	padding: 0;
+	margin: 0;
+}
+
+#amenitiesList ul li {
+	line-height: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+#amenitiesList ul li:last-child {
+	border-bottom: none;
+}
+
+#amenitiesList ul li input {
+	font-size: 16px;
+}
+
+#amenitiesList ul li span {
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+.fancyboxWrap {
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin: 15px 0;
+}
+
+.fancyboxWrap a img {
+	width: 100px;
+	border-radius: 2px;
+}
+
+.visit-button {
+	color: #333;
+	padding: 5px 15px;
+	float: right;
+	font-weight: bold;
+	font-style: italic;
+	transition: .3s;
+	text-decoration: none !important;
+}
+
+.visit-button span {
+	position: relative;
+	left: 0;
+	transition: .3s;
+}
+
+.visit-button:hover {
+	color: green;
+}
+
+.visit-button:hover span {
+	left: 8px;
+	color: green;
+}
+
+.parkInfo .fa {
+	color: #999;
+	font-size: 14px;
+	margin-right: 5px;
+}

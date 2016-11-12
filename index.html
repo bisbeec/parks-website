@@ -1,0 +1,984 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="assets/styles.css">
+	<!--park finder-->
+		<link rel="stylesheet" href="assets/parkfinder.css">
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="assets/fancyapps/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="assets/fancyapps/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="assets/fancyapps/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="assets/fancyapps/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="assets/fancyapps/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<link rel="stylesheet" href="assets/fancyapps/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="assets/fancyapps/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!--- end -->
+	<link rel="icon" type="image/png" href="assets/images/green-2d-shield.png">
+	<title>Vermont State Parks</title>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div class="container-fluid">
+				<div class="headerTopBar">
+					<div class="headerTopBarLeft">
+						<a href="http://www.vermont.gov/portal/" target="_blank"><img src="assets/images/vt-gov-logo.png"></a>
+					</div>
+					<div class="headerTopBarRight">
+						
+						<div class="searchWrap">
+							<script>
+							  (function() {
+							    var cx = '011813946425922538744:ldpq03g5vuc';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+						</div>
+					</div>
+				</div>
+				<div class="header-mid">
+					<ul class="header-left">
+						<li class="navLi" id="visitToggle">
+							<span>
+								VISIT
+							</span>
+							<div class="dropdown" id="visitDropdown">
+								<ul class="dropLeft">
+									<div class="dropdownHeadingWrap">
+										<a class="dropdownHeading" href="#parkFinderSec"></a>
+										<a class="text" href="#parkFinderSec">FIND A PARK</a>
+									</div>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Maps & Guides</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Photos & Video</a>
+									</li>
+									<li>Quick Finder:</li>
+									<ul class="findParkWide">
+										<li><a href="parks/alburgh-dunes.html">Alburgh Dunes</a></li>
+										<li><a href="parks/allis.html">Allis</a></li>
+										<li><a href="parks/big-deer.html">Big Deer</a></li>
+										<li><a href="parks/bomoseen.html">Bomoseen</a></li>
+										<li><a href="parks/boulder-beach.html">Boulder Beach</a></li>
+										<li><a href="parks/branbury.html">Branbury</a></li>
+										<li><a href="parks/brighton.html">Brighton</a></li>
+										<li><a href="parks/burton-island.html">Burton Island</a></li>
+										<li><a href="parks/button-bay.html">Button Bay</a></li>
+										<li><a href="parks/camp-plymouth.html">Camp Plymouth</a></li>
+										<li><a href="parks/camels-hump.html">Camel's Hump</a></li>
+										<li><a href="parks/coolidge.html">Coolidge</a></li>
+										<li><a href="parks/crystal-lake.html">Crystal Lake</a></li>
+										<li><a href="parks/dar.html">DAR</a></li>
+										<li><a href="parks/elmore.html">Elmore</a></li>
+										<li><a href="parks/emerald-lake.html">Emerald Lake</a></li>
+										<li><a href="parks/fort-dummer.html">Fort Dummer</a></li>
+										<li><a href="parks/gifford-woods.html">Gifford Woods</a></li>
+										<li><a href="parks/grand-isle.html">Grand Isle</a></li>
+										<li><a href="parks/green-river.html">Green River Reservoir</a></li>
+										<li><a href="parks/half-moon.html">Half Moon</a></li>
+										<li><a href="parks/jamaica.html">Jamaica</a></li>
+										<li><a href="parks/kettle-pond.html">Kettle Pond</a></li>
+										<li><a href="parks/kamp-kill-kare.html">Kamp Kill Kare</a></li>
+										<li><a href="parks/kingsland-bay.html">Kingsland Bay</a></li>
+										<li><a href="parks/knights-island.html">Knight Island</a></li>
+										<li><a href="parks/knights-point.html">Knight Point</a></li>
+										<li><a href="parks/lake-carmi.html">Lake Carmi</a></li>
+										<li><a href="parks/lake-shaftsbury.html">Lake Shaftsbury</a></li>
+										<li><a href="parks/lake-st-catherine.html">Lake St. Catherine</a></li>
+										<li><a href="parks/little-river.html">Little River</a></li>
+										<li><a href="parks/lowell-lake.html">Lowell Lake</a></li>
+										<li><a href="parks/maidstone.html">Maidstone</a></li>
+										<li><a href="parks/molly-stark.html">Molly Stark</a></li>
+										<li><a href="parks/mt-ascutney.html">Mt. Ascutney</a></li>
+										<li><a href="parks/mt-philo.html">Mt. Philo</a></li>
+										<li><a href="parks/new-discovery.html">New Discovery</a></li>
+										<li><a href="parks/niquette-bay.html">Niquette Bay</a></li>
+										<li><a href="parks/north-hero.html">North Hero</a></li>
+										<li><a href="parks/quechee.html">Quechee</a></li>
+										<li><a href="parks/ricker-pond.html">Ricker Pond</a></li>
+										<li><a href="parks/sand-bar.html">Sand Bar</a></li>
+										<li><a href="parks/seyon-lodge.html">Seyon Lodge</a></li>
+										<li><a href="parks/silver-lake.html">Silver Lake</a></li>
+										<li><a href="parks/smugglers-notch.html">Smugglers Notch</a></li>
+										<li><a href="parks/stillwater.html">Stillwater</a></li>
+										<li><a href="parks/stone-hut.html">Stone Hut</a></li>
+										<li><a href="parks/sweet-pond.html">Sweet Pond</a></li>
+										<li><a href="parks/thetford-hill.html">Thetford Hill</a></li>
+										<li><a href="parks/townshend.html">Townshend</a></li>
+										<li><a href="parks/underhill.html">Underhill</a></li>
+										<li><a href="parks/waterbury-center.html">Waterbury Center</a></li>
+										<li><a href="parks/wilgus.html">Wilgus</a></li>
+										<li><a href="parks/woodford.html">Woodford</a></li>
+										<li><a href="parks/woods-island.html">Woods Island</a></li>
+									</ul>
+								</ul>
+								<ul class="dropMid">
+									<div class="dropdownHeadingWrap">
+										<a class="dropdownHeading" href="camping.html"></a>
+										<a class="text" href="camping.html">CAMPING</a>
+									</div>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="camping.html#reservations">Making Reservations</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="camping.html#lodging">Cabins & Cottages</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="camping.html#policies">Policies & Rules</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="camping.html#campingWithPet">Camping with Pets</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="camping.html#groupCamping">Group Camping</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="camping.html#campingFees">Fees</a>
+									</li>
+									
+								</ul>
+								<ul class="dropRight">
+									<div class="dropdownHeadingWrap">
+										<a class="dropdownHeading" href="day-use.html"></a>
+										<a class="text" href="day-use.html">DAY USE</a>
+									</div>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Amenities</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Hours & Fees</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Passes</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Pets</a>
+									</li>
+									<li>
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+										<a href="">Pavilions</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="navLi" id="activitiesToggle">
+							<span href="">
+								ACTIVITIES
+							</span>
+							<div class="dropdown activities" id="activitiesDropdown">
+								<a href="camping.html" class="dropdownImg camping">
+									<span>Camping</span>
+								</a>
+								<a href="" class="dropdownImg hiking">
+									<span>Hiking</span>
+								</a>
+								<a href="" class="dropdownImg swimming">
+									<span>Swimming</span>
+								</a>
+								<a href="" class="dropdownImg boating">
+									<span>Boating</span>
+								</a>
+								<a href="" class="dropdownImg fishing">
+									<span>Fishing</span>
+								</a>
+								<a href="" class="dropdownImg picnics">
+									<span>Picnics</span>
+								</a>
+								<a href="" class="dropdownImg nature">
+									<span>Nature</span>
+								</a>
+								<a href="" class="dropdownImg quietTime">
+									<span>Quiet Time</span>
+								</a>
+								<a href="" class="dropdownImg otherActivities">
+									<span>Other Activities</span>
+								</a>
+								<a href="" class="dropdownImg parkEvents">
+									<span>Park Events & Programs</span>
+								</a>
+								<a href="" class="dropdownImg familyFun">
+									<span>Family Fun</span>
+								</a>
+								<a href="" class="dropdownImg ventureVt">
+									<span>Venture Vermont</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="header-right">
+						<li class="navLi" id="aboutUsToggle">
+							<span>ABOUT US</span>
+							<div class="dropdown aboutUs" id="aboutUsDropdown">
+								<a href="" class="dropdownImg news">
+									<span>News</span>
+								</a>
+								<a href="" class="dropdownImg overview">
+									<span>Overview</span>
+								</a>
+								<a href="" class="dropdownImg regionalOffices">
+									<span>Regional Offices</span>
+								</a>
+								<a href="" class="dropdownImg staffListing">
+									<span>Staff Listing</span>
+								</a>
+								<a href="" class="dropdownImg contactUs">
+									<span>Contact Us</span>
+								</a>
+								<a href="" class="dropdownImg employment">
+									<span>Employment</span>
+								</a>
+								<a href="" class="dropdownImg volunteering">
+									<span>Volunteering</span>
+								</a>
+								<a href="" class="dropdownImg internships">
+									<span>Internships</span>
+								</a>
+								<a href="" class="dropdownImg support">
+									<span>Support</span>
+								</a>
+								<a href="" class="dropdownImg blog">
+									<span>Blog</span>
+								</a>
+								<a href="" class="dropdownImg newsletter">
+									<span>Newsletter</span>
+								</a>
+							</div>
+						</li>
+						<li class="navLi">
+							<a href="">SHOP</a>
+						</li>
+					</ul>
+					<a class="headerLogoWrap" href="index.html"><img id="header-logo" src="assets/images/green-2d-shield.png" alt="Vermont State Parks"></a>
+				</div>
+			</div>
+			<div id="hamburger">
+				<div class="bar one"></div>
+				<div class="bar two"></div>
+				<div class="bar three"></div>
+			</div>
+			<a href="reservations.html" class="reserveButtonHeader">Reserve Today</a>
+		</header>
+		<main id="main">
+			<div class="carouselWrap">
+				<div id="myCarousel" class="carousel slide carouselShowcase" data-ride="carousel">
+					<div class="welcomeOverlay">
+						<h1>EXPLORE VERMONT STATE PARKS</h1>
+						<h3>Lorum ipsum dolor et sumet</h3>
+					</div>
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="customCarouselIndicator active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1" class="customCarouselIndicator"></li>
+					    <li data-target="#myCarousel" data-slide-to="2" class="customCarouselIndicator"></li>
+					    <li data-target="#myCarousel" data-slide-to="3" class="customCarouselIndicator"></li>
+					    <li data-target="#myCarousel" data-slide-to="4" class="customCarouselIndicator"></li>
+					    <li data-target="#myCarousel" data-slide-to="5" class="customCarouselIndicator"></li>
+					</ol>
+
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="assets/images/landingCarousel/elmore-beach-landing.jpg" alt="Elmore State Park">
+							<div class="carousel-caption">
+								<h4>Elmore State Park</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img src="assets/images/landingCarousel/boy-running-into-water.jpg" alt="Alburgh Dunes State Park">
+							<div class="carousel-caption">
+								<h4>Alburgh Dunes State Park</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img src="assets/images/landingCarousel/brighton-cabin-landing.jpg" alt="Brighton">
+							<div class="carousel-caption">
+								<h4>Brighton State Park</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img src="assets/images/landingCarousel/agnes-grr-landing.jpg" alt="Green River Reservoir">
+							<div class="carousel-caption">
+								<h4>Green River Reservoir</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img src="assets/images/landingCarousel/child-on-rocks-landing.jpg" alt="Quechee State Park">
+							<div class="carousel-caption">
+								<h4>Quechee State Park</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img src="assets/images/landingCarousel/people-looking-at-view-landing.jpg" alt="New Discovery State Park">
+							<div class="carousel-caption">
+								<h4>New Discovery State Park</h4>
+							</div>
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<section id="mission">
+				<h1 id="welcome">Welcome</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div id="vidWrap">
+					<video controls>
+						<source src="assets/video/elmore-crew.m4v" type="video/mp4">
+					</video>
+				</div>
+			</section>
+			<section id="newsFeed">
+				<h2>Park News & Events</h2>
+				<div id="newsFeedGrid">
+					<div class="newsFeedRow">
+						<div class="item-anchor-square-wrap">
+							<a href="" class="item-anchor item-anchor-square">
+								<div class="imgWrap" id="campingAvailability"></div>
+								<div class="textSec opaque campingAvailability">
+									<h4>Camping Availability this Weekend</h4>
+									<p>The most current list of availability for this upcoming weekend.</p>
+								</div>
+							</a>
+							<a href="" class="item-anchor item-anchor-square">
+								<div class="imgWrap" id="newsletter"></div>
+								<div class="textSec opaque">
+									<h4>VT State Parks July Newsletter</h4>
+									<p>Read about newts, park events, get summer camping ideas, and more!</p>
+								</div>
+							</a>
+						</div>
+						<a href="" class="item-anchor item-anchor-small">
+							<div class="imgWrap">
+								<img src="assets/images/news-feed/vtparksforever-logo.png">
+							</div>
+							<div class="textSec">
+								<h4>Vermont Parks Forever</h4>
+								<p>Vermont Parks Forever leverages private resources to improve Vermont State Parks. Click to learn more.</p>
+							</div>
+						</a>
+						<a href="" class="item-anchor item-anchor-small">
+							<div class="imgWrap">
+								<img src="assets/images/news-feed/person-hiking.jpg">
+							</div>
+							<div class="textSec">
+								<h4>New Trailfinder Website</h4>
+								<p>Looking for the perfect hike? Visit <span class="fauxLink">trailfinder.info</span> to narrow your search by location, trail difficulty or keyword.</p>
+							</div>
+						</a>
+						<a href="http://vtstateparks.blogspot.com/2016/07/submit-your-recipe-and-video-and-win.html" target="_blank" class="item-anchor item-anchor-large">
+							<div class="imgWrap" id="cookoff"></div>
+							<div class="textSec opaque" id="cookoff-textSec">
+								<h4>Enter the Campfire Cook-off Video Contest!</h4>
+								<p>Submit a video of you preparing your favorite outdoor cooking recipe and you can win a prize package that includes camping, firewood, ice and Vermont products -- plus, the best prize of all: bragging rights.</p>
+							</div>
+						</a>
+					</div>
+					<div class="newsFeedRow">
+						<a href="" class="item-anchor item-anchor-small">
+							<div class="imgWrap">
+								<img src="assets/images/news-feed/vtparksforever-logo.png">
+							</div>
+							<div class="textSec">
+								<h4>Vermont Parks Forever</h4>
+								<p>Vermont Parks Forever leverages private resources to improve Vermont State Parks. Click to learn more.</p>
+							</div>
+						</a>
+						<a href="" class="item-anchor item-anchor-small">
+							<div class="imgWrap">
+								<img src="assets/images/news-feed/newsletter2.jpg">
+							</div>
+							<div class="textSec">
+								<h4>VT State Parks' July Newsletter</h4>
+								<p>Read about newts, park events, get summer camping ideas, and more!</p>
+							</div>
+						</a>
+						<div class="item-anchor-square-wrap">
+							<a href="" class="item-anchor item-anchor-square">
+								<div class="imgWrap" id="campingAvailability"></div>
+								<div class="textSec opaque campingAvailability">
+									<h4>Camping Availability this Weekend</h4>
+									<p>The most current list of availability for this upcoming weekend.</p>
+								</div>
+							</a>
+							<a href="" class="item-anchor item-anchor-square">
+								<div class="imgWrap" id="newsletter"></div>
+								<div class="textSec opaque">
+									<h4>VT State Parks July Newsletter</h4>
+									<p>Read about newts, park events, get summer camping ideas, and more!</p>
+								</div>
+							</a>
+						</div>
+						<a href="" class="item-anchor item-anchor-small">
+							<div class="imgWrap">
+								<img src="assets/images/news-feed/family-camping2.jpg">
+							</div>
+							<div class="textSec">
+								<h4>Camping availability this weekend</h4>
+								<p>Need a camping break? Here is the most current list of availability for this upcoming weekend.</p>
+							</div>
+						</a>
+						<a href="" class="item-anchor item-anchor-small">
+							<div class="imgWrap">
+								<img src="assets/images/news-feed/family-camping2.jpg">
+							</div>
+							<div class="textSec">
+								<h4>Camping availability this weekend</h4>
+								<p>Need a camping break? Here is the most current list of availability for this upcoming weekend.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="parkFinderSec">
+				<h2>Park Finder</h2>
+				<p class="instructions">Click on a park location for more information.</p>
+				<div id="parkfinderContainer">
+					<div id="mapWrap">
+						<img id="map" src="assets/images/vt-map.jpg">
+						<!--elmore-->
+						<div id="elmoreWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="elmorePointer" aria-hidden="true" data-category="universal-access boat-launch boat-rental camping fishing hiking picnic-areas swimming"></i>
+							<p class="parkTitle" id="elmoreTitle">Elmore State Park</p>
+						</div>
+						<!--grr-->
+						<div id="grrWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="grrPointer" aria-hidden="true" data-category="boat-launch camping fishing hiking swimming"></i>
+							<p class="parkTitle" id="grrTitle">Green River Reservoir</p>
+						</div>
+						<!--crystal lake-->
+						<div id="crystallakeWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="crystallakePointer" aria-hidden="true" data-category="universal-access boat-launch boat-rental lodges fishing picnic-areas"></i>
+							<p class="parkTitle" id="crystallakeTitle">Crystal Lake State Park</p>
+						</div>
+						<!--brighton-->
+						<div id="brightonWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="brightonPointer" aria-hidden="true" data-category="universal-access boat-launch boat-rental lodges camping fishing hiking picnic-areas swimming"></i>
+							<p class="parkTitle" id="brightonTitle">Brighton State Park</p>
+						</div>
+						<!--maidstone-->
+						<div id="maidstoneWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="maidstonePointer" aria-hidden="true" data-category="universal-access boat-launch boat-rental camping fishing hiking picnic-areas swimming"></i>
+							<p class="parkTitle" id="maidstoneTitle">Maidstone State Park</p>
+						</div>
+						<!--smuggs-->
+						<div id="smuggsWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="smuggsPointer" aria-hidden="true" data-category="universal-access camping hiking picnic-areas"></i>
+							<p class="parkTitle" id="smuggsTitle">Smuggler's Notch State Park</p>
+						</div>
+						<!--waterbury center-->
+						<div id="waterburycenterWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="waterburycenterPointer" aria-hidden="true" data-category="universal-access boat-launch boat-rental fishing hiking picnic-areas swimming"></i>
+							<p class="parkTitle" id="waterburycenterTitle">Waterbury Center State Park</p>
+						</div>
+						<!--little river-->
+						<div id="littleriverWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="littleriverPointer" aria-hidden="true" data-category="universal-access boat-launch boat-rental camping lodges fishing hiking picnic-areas swimming"></i>
+							<p class="parkTitle" id="littleriverTitle">Little River State Park</p>
+						</div>
+						<!--underhill-->
+						<div id="underhillWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="underhillPointer" aria-hidden="true" data-category="universal-access camping fishing hiking picnic-areas"></i>
+							<p class="parkTitle" id="underhillTitle">Underhill State Park</p>
+						</div>
+						<!--lake carmi-->
+						<div id="lakecarmiWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="lakecarmiPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="lakecarmiTitle">Lake Carmi State Park</p>
+						</div>
+						<!--alburg dunes-->
+						<div id="alburgdunesWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="alburgdunesPointer" aria-hidden="true" data-category="camping hiking"></i>
+							<p class="parkTitle" id="alburgdunesTitle">Alburg Dunes State Park</p>
+						</div>
+						<!--north hero-->
+						<div id="northheroWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="northheroPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="northheroTitle">North Hero State Park</p>
+						</div>
+						<!--knight island-->
+						<div id="knightislandWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="knightislandPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="knightislandTitle">Knight Island State Park</p>
+						</div>
+						<!--woods island-->
+						<div id="woodsislandWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="woodsislandPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="woodsislandTitle">Woods Island State Park</p>
+						</div>
+						<!--kill kare-->
+						<div id="killkareWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="killkarePointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="killkareTitle">Kill Kare State Park</p>
+						</div>
+						<!--burton island-->
+						<div id="burtonislandWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="burtonislandPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="burtonislandTitle">Burton Island State Park</p>
+						</div>
+						<!--knight point-->
+						<div id="knightpointWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="knightpointPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="knightpointTitle">Knight Point State Park</p>
+						</div>
+						<!--grand isle-->
+						<div id="grandisleWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="grandislePointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="grandisleTitle">Grand Isle State Park</p>
+						</div>
+						<!--sand bar-->
+						<div id="sandbarWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="sandbarPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="sandbarTitle">Sand Bar State Park</p>
+						</div>
+						<!--niquette bay-->
+						<div id="niquettebayWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="niquettebayPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="niquettebayTitle">Niquette Bay State Park</p>
+						</div>
+						<!--mt philo-->
+						<div id="mtphiloWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="mtphiloPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="mtphiloTitle">Mount Philo State Park</p>
+						</div>
+						<!--camels hump-->
+						<div id="camelshumpWrap" class="mapParkWrap">
+							<i class="fa fa-map-marker parkPointer" id="camelshumpPointer" aria-hidden="true"data-category="camping hiking"></i>
+							<p class="parkTitle" id="camelshumpTitle">Camel's Hump State Park</p>
+						</div>
+					</div>
+					<div id="amenitiesWrap">
+						<div id="amenitiesList">
+							<p>Filter by Park Amenities:</p>
+							<ul>
+								<li>
+									<input type="checkbox" id="campingCheckbox" value="camping">
+									<span>Camping</span>
+								</li>
+								<li>
+									<input type="checkbox" id="universalAccessCheckbox" value="universal-access">
+									<span>Universal Accessibility</span>
+								</li>
+								<li>
+									<input type="checkbox" value="swimming">
+									<span>Swimming</span>
+								</li>
+								<li>
+									<input type="checkbox" value="fishing">
+									<span>Fishing</span>
+								</li>
+								<li>
+									<input type="checkbox" value="boat-launch">
+									<span>Boat Launch</span>
+								</li>
+								<li>
+									<input type="checkbox" value="boat-rental">
+									<span>Boat Rental</span>
+								</li>
+								<li>
+									<input type="checkbox" value="hiking">
+									<span>Hiking</span>
+								</li>
+								<li>
+									<input type="checkbox" value="lodges">
+									<span>Lodges/Cottages/Cabins</span>
+								</li>
+								<li>
+									<input type="checkbox" value="picnic-areas">
+									<span>Picnic Areas</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!--Elmore-->
+					<div class="parkInfo" id="elmoreInfo">
+						<p class="parkName">Elmore State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.888.2982
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							856 VT Rte 12, Lake Elmore, VT 05657
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/wheelchair.jpg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/swimming.jpg" alt="Swimming" title="Swimming">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/boat-rental.jpg" alt="Boat Rentals" title="Boat Rentals">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/elmore-beach.jpg"><img src="assets/images/fancybox/elmore-beach.jpg" alt="Beech Lean-to" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/elmore-bh-autumn.jpg"><img src="assets/images/fancybox/elmore-bh-autumn.jpg" alt="Elmore Beach House" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/elmore-pavilion.jpg"><img src="assets/images/fancybox/elmore-pavilion.jpg" alt="Elmore Beach House" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/lake-from-ft.jpg"><img src="assets/images/fancybox/lake-from-ft.jpg" alt="Elmore Beach House" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/elmore-sailboat.jpg"><img src="assets/images/fancybox/elmore-sailboat.jpg" alt="Elmore Beach House" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/elmore-field.jpg"><img src="assets/images/fancybox/elmore-field.jpg" alt="Elmore Beach House" /></a>
+						</div>
+						<a href="parks/elmore.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+					
+					<!--GRR-->
+					<div class="parkInfo" id="grrInfo">
+						<p class="parkName">Green River Reservoir</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.888.1349
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							1393 Green River Dam Rd, Hyde Park, VT 0565
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/swimming.jpg" alt="Swimming" title="Swimming">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/small-boat-access.jpg" alt="Boat Access" title="Small Boat Access">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/green-river.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+
+					<!--Crystal Lake-->
+					<div class="parkInfo" id="crystallakeInfo">
+						<p class="parkName">Crystal Lake State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.525.6205
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							96 Bellwater Ave, Barton, VT 05822
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Access" title="Universal Access">
+							<img class="iconImgTitle" src="assets/images/icons/boat-access.jpg" alt="Boat Access" title="Boat Access">
+							<img class="iconImgTitle" src="assets/images/icons/boat-rental.jpg" alt="Boat Rental" title="Boat Rental">
+							<img class="iconImgTitle" src="assets/images/icons/cabin.jpg" alt="Cabins" title="Cabins">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/crystallake.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+
+					<!--Brighton-->
+					<div class="parkInfo" id="brightonInfo">
+						<p class="parkName">Brighton State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.723.4360
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							102 State Park Rd, Island Pond, VT 05846
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/boat-access.jpg" alt="Boat Access" title="Boat Access">
+							<img class="iconImgTitle" src="assets/images/icons/boat-rental.jpg" alt="Boat Rentals" title="Boat Rentals">
+							<img class="iconImgTitle" src="assets/images/icons/cabin.jpg" alt="Cabins" title="Cabins">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+							<img class="iconImgTitle" src="assets/images/icons/swimming.jpg" alt="Swimming" title="Swimming">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/brighton.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+
+					<!--Maidstone-->
+					<div class="parkInfo" id="maidstoneInfo">
+						<p class="parkName">Maidstone State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.676.3930
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							PO Box 388, Guildhall, VT 05905
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/boat-access.jpg" alt="Boat Access" title="Boat Access">
+							<img class="iconImgTitle" src="assets/images/icons/boat-rental.jpg" alt="Boat Rentals" title="Boat Rentals">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+							<img class="iconImgTitle" src="assets/images/icons/swimming.jpg" alt="Swimming" title="Swimming">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/elmore.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+					<!--Smuggs-->
+					<div class="parkInfo" id="smuggsInfo">
+						<p class="parkName">Smuggler's Notch State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.253.4014
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							6443 Mountain Rd, Stowe, VT 05672
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/elmore.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+					<!--Underhill-->
+					<div class="parkInfo" id="underhillInfo">
+						<p class="parkName">Underhill State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.899.3022
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							PO Box 249, Underhill Center, VT 05490
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/elmore.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+					<!--Waterbury Center-->
+					<div class="parkInfo downOne" id="waterburycenterInfo">
+						<p class="parkName">Waterbury Center State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.244.1226
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							177 Reservoir Rd, Waterbury Center, VT 05677
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/boat-access.jpg" alt="Boat Access" title="Boat Access">
+							<img class="iconImgTitle" src="assets/images/icons/boat-rental.jpg" alt="Boat Rentals" title="Boat Rentals">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+							<img class="iconImgTitle" src="assets/images/icons/swimming.jpg" alt="Swimming" title="Swimming">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/elmore.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+					<!--Little River-->
+					<div class="parkInfo downOne" id="littleriverInfo">
+						<p class="parkName">Little River State Park</p>
+						<p class="parkPhone">
+							<i class="fa fa-phone"></i>
+							802.244.7103
+						</p>
+						<p class="parkCity">
+							<i class="fa fa-map-marker"></i>
+							3444 Little River Rd, Waterbury, VT 05676
+						</p>
+						<div class="iconsWrap">
+							<img class="iconImgTitle" src="assets/images/icons/handicapped-access.jpeg" alt="Universal Accessibility" title="Universal Accessibility">
+							<img class="iconImgTitle" src="assets/images/icons/boat-access.jpg" alt="Boat Access" title="Boat Access">
+							<img class="iconImgTitle" src="assets/images/icons/boat-rental.jpg" alt="Boat Rentals" title="Boat Rentals">
+							<img class="iconImgTitle" src="assets/images/icons/camping.jpg" alt="Camping" title="Camping">
+							<img class="iconImgTitle" src="assets/images/icons/cabin.jpg" alt="Cabins" title="Cabins">
+							<img class="iconImgTitle" src="assets/images/icons/fishing.jpg" alt="Fishing" title="Fishing">
+							<img class="iconImgTitle" src="assets/images/icons/hiking.jpg" alt="Hiking" title="Hiking">
+							<img class="iconImgTitle" src="assets/images/icons/picnic-table.jpg" alt="Picnic Area" title="Picnic Area">
+							<img class="iconImgTitle" src="assets/images/icons/swimming.jpg" alt="Swimming" title="Swimming">
+						</div>
+						<div class="fancyboxWrap">
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-canoe-front.jpg"><img src="assets/images/fancybox/grr-canoe-front.jpg" alt="Canoe" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/grr-people-canoeing.jpg"><img src="assets/images/fancybox/grr-people-canoeing.jpg" alt="People canoeing" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/boy-jumping-water.jpg"><img src="assets/images/fancybox/boy-jumping-water.jpg" alt="Child jumping into water" /></a>
+							<a class="fancybox" rel="group" href="assets/images/fancybox/children-in-water.jpg"><img src="assets/images/fancybox/children-in-water.jpg" alt="Children playing"/></a>
+						</div>
+						<a href="parks/elmore.html" class="visit-button">Visit Park Page <span>>></span></a>
+						<div class="closeBox">X</div>
+					</div>
+				</div>
+				<script src="assets/parkfinder.js"></script>
+			</section>
+			<section id="bottomPhotos">
+				<a href="" class="photo one">
+					<div class="photoOverlay">
+						<h3><i class="fa fa-ticket"></i> State Park Passes</h3>
+					</div>
+				</a>
+				<a href="" class="photo two">
+					<div class="photoOverlay">
+						<h3><i class="fa fa-calendar"></i> Upcoming Events</h3>
+					</div>
+				</a>
+				<a href="" class="photo three">
+					<div class="photoOverlay">
+						<h3><i class="fa fa-check"></i> Top Five</h3>
+					</div>
+				</a>
+			</section>
+		</main>
+		<footer>
+			<div class="footerCol">
+				<h2>Contact Information</h2>
+				<ul>
+					<li>Vermont State Parks</li>
+					<li>1 National Life Drive, Davis 2</li>
+					<li>Montpelier, VT 05620</li>
+					<li><a href="mailto:anr.parks@vermont.gov">anr.parks@vermont.gov</a></li>
+					<li><a href="tel:18884097579">1.888.409.7579</a></li>
+				</ul>
+			</div>
+			<div class="footerCol">
+				<h2>Quick Links</h2>
+				<ul>
+					<li>
+						<a href="">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="">Fees</a>
+					</li>
+					<li>
+						<a href="">Rules</a>
+					</li>
+					<li>
+						<a href="">Find a Park</a>
+					</li>
+					<li>
+						<a href="">Opportunities</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footerCol">
+				<h2>Follow Us</h2>
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/VTStateParks" target="_blank">
+							<i class="fa fa-facebook-square"></i>
+							Facebook
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/VTStateParks" target="_blank">
+							<i class="fa fa-twitter-square"></i>
+							Twitter
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/vtstateparks/" target="_blank">
+							<i class="fa fa-instagram"></i>
+							Instagram
+						</a>
+					</li>
+					<li>
+						<a href="https://www.pinterest.com/vtstateparks/beautiful-vermont-state-parks/" target="_blank">
+							<i class="fa fa-pinterest-square"></i>
+							Pinterest
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/user/vtstateparks" target="_blank">
+							<i class="fa fa-youtube-square"></i>
+							You Tube
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p class="copyright"><a href="http://charliebisbee.com/" target="_blank">website by cbwd</a></p>
+		</footer>
+	</div>
+	<script src="assets/custom.js"></script>
+</body>
+
+</html>

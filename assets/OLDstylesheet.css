@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	color:black;
+	font-family:Verdana, Arial, Helvetica, Verdana, sans-serif;
+	background-color:#D6FFCA;
+	background-image:url(../images/bg_page.gif);
+	background-repeat:repeat-y;
+	background-position:center;
+	font-size:100%;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+a:link{color:#363;font-weight:bold; text-decoration:none}
+a:visited{color:#666;font-weight:bold; text-decoration:none}
+a:hover{color:#069;font-weight:bold; text-decoration:underline}
+
+a.white:link{color:#FFF; font-weight:normal}
+a.white:visited{color:#FFF; font-weight:normal}
+a.white:hover{color:#FF9; font-weight:normal; text-decoration:underline}
+
+
+a.vermontgov:link{color:#FFF}
+a.vermontgov:visited{color:#FFF}
+a.vermontgov:hover{color:#FF9; text-decoration:underline}
+
+a.black:link{color:#000}
+a.black:visited{color:#000}
+a.black:hover{color:#030; text-decoration:underline}
+
+p {
+	font-size:0.75em;
+	text-indent:0px;
+}
+h3 {
+	margin: 0px 0px 1px 0px;
+}
+h4 {
+	margin: 0px 0px 1px 0px;
+}
+h5 {
+	margin: 0px 0px 1px 0px;
+}
+.white {
+	text-decoration:none;
+	text-indent:0px;
+}
+.black {
+	text-decoration:none;
+}
+.topbar {
+	background-color:#030;
+	background-image:url(../images/header2.gif);
+	background-repeat:no-repeat;
+	width:975px;
+	height:102px;
+}
+.nav1 {
+	background-color:#063;
+	background-image:url(../images/bg_green.gif);
+	background-repeat:repeat-x;
+	font-size:0.75em;
+	font-weight:bold;
+	text-align:center;
+	color: #FFF;
+	padding:5px 7px;
+	text-transform:uppercase;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.nav2 {
+	background-color:#9CF;
+	background-image:url(../images/bg_blue.gif);
+	background-repeat:repeat-x;
+	font-size:0.75em;
+	font-weight:bold;
+	text-align:center;
+	color:#000;
+	padding:5px 0px;
+	text-transform:uppercase;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.navleft {
+	width:140px;
+	color: #FFF;
+	padding-top:0px;
+	padding-left:10px;
+	padding-right:10px;
+	text-indent:0px;
+}
+.tableleft {
+	width:120px;
+	color: #FFF;
+	padding:10px;
+}
+.navright {
+	width:195px;
+	color:#000;
+	text-align:center;
+}
+.tableright {
+	width:195px;
+	color:#000;
+	text-align:center;
+}
+.maincontent {
+	width:640px;
+	}
+.editable {
+	width: 550px;
+}
+
+.seasonal {
+	padding:2px;
+}
+.fastpark {
+	position:relative;
+	bottom:5px;
+	left:630px;
+}
+.footer {
+	font-size:0.67em;
+	text-align:center;
+}
+.searchbar {
+	text-align:left;
+	position:relative;
+	left:5px;
+}
+.vermontgov {
+	font-size:0.75em;
+	text-decoration:none;
+	font-weight: normal;
+}
+#c1container {
+	width: 615px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.c2titlec2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.c3alsosee {
+	width: 205px;
+	height: auto;
+	float: right;
+}
+.c3alsosee ul {
+	list-style-type: none;
+	list-style-image: url(../treeicon.jpg);
+}
+.c3alsosee ul li {
+	padding-bottom: 10px;
+}
+
+
+.c3alsosee ul li a {
+	text-decoration: none;
+	word-spacing: normal;
+	padding-bottom: 10px;
+}
+.c4trailinfo {
+	margin-top: 10px;
+}
+
+.c5trailtable {
+	border: medium solid #000;
+	margin-right: auto;
+	margin-left: auto;
+}
+.c5trailtable a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.c6titletableheader {
+	color: #063;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	font-weight: bold;
+}
+.c7tableheader  {
+	color: #063;
+	text-align: center;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	font-weight: bold;
+}
+.c8greentitle {
+	color: #FFF;
+	background-color: #063;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+
+.c9greencontentcol1top {
+	color: #FFF;
+	background-color: #063;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #000;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+.c10greencontenttop {
+	color: #FFF;
+	background-color: #063;
+	text-align: center;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+.c11greencontentcol1mid {
+	color: #FFF;
+	background-color: #063;
+	text-align: center;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.c12greencontentmid {
+	color: #FFF;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	background-color: #063;
+	text-align: center;
+}
+.c13tantitle {
+	color: #063;
+	background-color: #CC9;
+	text-align: center;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+.c13tantitle a {
+	color: #063;
+}
+
+.c14tancontentcol1top {
+	color: #063;
+	background-color: #CC9;
+	text-align: center;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.c15tancontenttop {
+	color: #063;
+	background-color: #CC9;
+	text-align: center;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+
+.c16tancontentcol1mid {
+	color: #063;
+	background-color: #CC9;
+	text-align: center;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.c17tancontentmid {
+	color: #063;
+	background-color: #CC9;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+}
+#map {
+	border: thin solid #000;
+	height: 600px;
+	width: 400px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+.editable {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+}
+.pagetitle {
+	margin-top: 10px;
+}
+
+.flash {
+	height: 449px;
+	width: 601px;
+}
+
+div.hikingcontent img {
+     border: none;
+	 }
+	 
+div.hikingcontent {
+        padding: 12px;
+		width: 615px;
+		}
+		
+div.hikingcontent table.hikingtrails {
+       width: 600px;
+	   border: solid 1px;
+	   border-collapse: collapse;
+	   empty-cells: show;
+	   margin-left: auto;
+	   margin-right: auto;
+	   }
+
+div.hikingcontent table.hikingmap td {
+        border: none;
+		padding-bottom: 15px;
+		padding-right: 30px;
+		padding-left: 30px;
+		font-weight: bold;
+		}
+	   
+div.hikingcontent th {
+        font-size: .8em;
+        color: #FFF;
+        background-color: #063;
+		padding: 2px;
+		border: black solid 1px;
+		}
+		
+div.hikingcontent td {
+        border: solid 1px;
+		font-size: .8em;
+		padding: 6px;
+		}
+
+		
+div.hikingcontent tr.darktint {
+        background-color: #FFC;
+		}
+		
+	   
+div.hikingcontent p.links {
+        padding-left: 20px;
+		}
+		
+div.hikingcontent p.parkheader {
+       font-weight: bold;
+	   font-size: 1.05em;
+	   }

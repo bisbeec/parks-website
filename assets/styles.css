@@ -1,0 +1,1303 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('fonts/lato/Lato-Regular.ttf');
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'MyWebFont', arial, geneva, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.btn-green {
+	background-color: #336600;
+	color: #fff !important;
+	transition: .3s;
+}
+
+.btn-green:hover {
+	background-color: #1a3300;
+}
+
+.button {
+	padding: 5px;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	text-decoration: none !important;
+	transition: .3s;
+}
+
+.form-control.small {
+	height: auto;
+}
+
+.pointer {
+	cursor: pointer !important;
+}
+
+#hamburger {
+	width: 34px;
+	position: absolute;
+	right: 20px;
+	top: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#hamburger .bar {
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	margin-bottom: 5px;
+	position: relative;
+	border-radius: 3px;
+	transition: .3s;
+}
+
+#hamburger .bar.three {
+	margin-bottom: 0;
+}
+
+/************bar effects**********/
+.barOneEffect {
+	background-color: transparent !important;
+}
+
+.barTwoEffect {
+	transform: rotate(45deg);
+}
+
+.barThreeEffect {
+	transform: rotate(135deg);
+	bottom: 8px;
+}
+/****************/
+
+.fa-arrow-right {
+	transition: .3s;
+}
+
+.arrowRotateDown {
+	transform: rotate(90deg);
+}
+
+header {
+	background: #336600;
+	position: fixed;
+	height:110px;
+	width: 100%;
+	transition: .3s;
+	top: 0;
+	z-index: 3;
+}
+
+header .headerTopBar {
+	background-color: #1a3300;
+	margin: 0 -15px;
+	padding: 10px 10px 25px;
+	color: #ddd;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+header .headerTopBar .headerTopBarLeft {
+	float: left;
+}
+
+header .headerTopBar .headerTopBarRight {
+	float: right;
+}
+
+header .headerTopBar .headerTopBarLeft img {
+	width: 125px;
+}
+
+a.headerLogoWrap {
+	position: relative;
+	bottom: -10px;
+	left: 2px;
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+	transition: .3s;
+}
+
+img#header-logo {
+	width: 100%;
+}
+
+.header-mid {
+	width: 590px;
+	margin: 0 auto;
+	transition: .3s;
+	height: 0;
+}
+
+.header-left {
+	float: left;
+}
+
+.header-right {
+	float: right;
+}
+
+header li a {
+	font-weight: 500;
+}
+
+.stickyHeader {
+	background:rgba(51,102,0,.95);
+	height: 80px;
+}
+
+.stickyHeaderLogo {
+	bottom: 23px !important;
+	width: 120px !important;
+}
+
+.navLi {
+	cursor: pointer;
+	padding: 29px 18px 26px;
+	float: left;
+	transition: .3s;
+	letter-spacing: 2px;
+	color: #eee;
+	font-weight: 500;
+}
+
+.navLi:hover {
+	background: #1a3300;
+	color: #fff;
+}
+
+.navLi a {
+	color: #eee;
+	text-decoration: none;
+}
+
+.navLi a:hover {
+	color: #fff;
+}
+
+.navLiSticky {
+	padding: 12px 18px 13px;
+}
+
+header .reserveButtonHeader {
+	color: #fff;
+	background-color: #ff6600;
+	position: absolute;
+	top: 56px;
+	right: 19px;
+	padding: 6px 12px;
+	border-radius: 3px;
+	text-decoration: none !important;
+	letter-spacing: 1px;
+	transition: .3s;
+}
+header .reserveButtonHeader:hover {
+	background-color: #e65c00;
+}
+
+header .reserveButtonHeader.sticky {
+	top: 41px;
+}
+
+.dropdown {
+	background: rgba(34,34,34,.9);
+	color: #333;
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 100%;
+	padding: 100px 10px 30px;
+	box-shadow: 0 7px 7px -7px #999;
+	transition: .3s;
+	cursor: initial;
+	display: none;
+}
+
+.dropdown li {
+	margin-top: 15px;
+	color: #fff;
+}
+
+.dropdown .dropLeft, .dropdown .dropMid, .dropdown .dropRight {
+	float: left;
+	width: 33.33333%;
+	padding: 0 50px;
+}
+.dropdown .dropdownHeadingWrap {
+	height: 160px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.dropdown .dropdownHeading {
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	display: block;
+	transition: 1s;
+}
+
+.dropdown .dropdownHeadingWrap .text {
+	background-color: #336600;
+	position: absolute;
+	color: #eee;
+	bottom: 0;
+	padding: 5px 15px;
+	transition: .5s;
+	text-decoration: none !important;
+}
+
+.dropdown .dropdownHeadingWrap:hover .text {
+	padding: 5px 15px 5px 25px;
+	color: #fff;
+}
+
+.dropdown .dropdownHeadingWrap:hover .dropdownHeading{
+	transform: scale(1.05);
+}
+
+.dropdown .dropLeft .dropdownHeading {
+	background-image: url(images/map-finder.jpg);
+}
+
+.dropdown .dropMid .dropdownHeading {
+	background-image: url(images/news-feed/family-camping.jpg);
+}
+
+.dropdown .dropright .dropdownHeading {
+	background-image: url(images/family-picnic.jpg);
+}
+
+.dropdown a {
+	color: #ccc;
+	font-size: 14px;
+	transition: .3s;
+}
+
+.dropdown a:hover {
+	color: #fff;
+}
+
+.dropdown .fa-angle-right {
+	color: #fff;
+	margin-right: 5px;
+}
+
+
+.dropdown .findParkWide {
+	background-color: #fff;
+	height: 120px;
+	overflow: scroll;
+	margin-top: 5px;
+}
+
+.dropdown .findParkWide li {
+	margin: 0;
+}
+
+.dropdown .findParkWide li a {
+	color: #333;
+	display: block;
+	margin-right: -1px;
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none !important;
+	letter-spacing: initial;
+}
+
+.dropdown .findParkWide li a:hover {
+	background-color: #336600;
+	color: #fff;
+}
+
+.dropdown .dropdownImg {
+	display: block;
+	position: relative;
+	float: left;
+	margin-bottom: 15px;
+	width: 15%;
+	height: 140px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 2%;
+}
+
+.dropdown .dropdownImg:last-child {
+	margin-right: 0;
+}
+
+.dropdown .dropdownImg span {
+	text-transform: uppercase;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	background-color: #336600;
+	padding: 5px 15px;
+	transition: .3s;
+}
+
+.dropdown .dropdownImg:hover span {
+	padding: 5px 15px 5px 25px;
+}
+
+.dropdown .dropdownImg.camping {
+	background-image: url(images/news-feed/family-camping2.jpg);
+}
+.dropdown .dropdownImg.hiking {
+	background-image: url(images/hiking-family.jpg);
+}
+.dropdown .dropdownImg.swimming {
+	background-image: url(images/girls-swimming.jpg);
+}
+.dropdown .dropdownImg.boating {
+	background-image: url(images/kayak-elmore.jpg);
+}
+.dropdown .dropdownImg.fishing {
+	background-image: url(images/girl-staff-fishing.jpg);
+}
+.dropdown .dropdownImg.picnics {
+	background-image: url(images/family-picnic.jpg);
+	margin-right: 0;
+}
+.dropdown .dropdownImg.nature {
+	background-image: url(images/elmore/elmore-fieldSmall.jpg);
+}
+.dropdown .dropdownImg.quietTime {
+	background-image: url(images/elmore/lake-from-ft.jpg);
+}
+.dropdown .dropdownImg.otherActivities {
+	background-image: url(images/biking-people.jpg);
+}
+.dropdown .dropdownImg.parkEvents {
+	background-image: url(images/elmore/pavilion-kids.jpg);
+}
+.dropdown .dropdownImg.familyFun {
+	background-image: url(images/grr/fancybox/children-playing-in-waterFancy.jpg);
+}
+.dropdown .dropdownImg.ventureVt {
+	background-image: url(images/elmore/pavilion-kids.jpg);
+}
+.dropdown .dropdownImg.news {
+	background-image: url(images/news-feed/cookoff-ad-sm.jpg);
+}
+.dropdown .dropdownImg.overview {
+	background-image: url(images/green-2d-shield.jpg);
+}
+.dropdown .dropdownImg.regionalOffices {
+	background-image: url(images/green-2d-shield.jpg);
+}
+.dropdown .dropdownImg.staffListing {
+	background-image: url(images/elmore-crew-table.jpg);
+}
+.dropdown .dropdownImg.contactUs {
+	background-image: url(images/green-2d-shield.jpg);
+}
+.dropdown .dropdownImg.employment {
+	background-image: url(images/elmore-crew-table.jpg);
+}
+.dropdown .dropdownImg.volunteering {
+	background-image: url(images/elmore-crew-table.jpg);
+}
+.dropdown .dropdownImg.internships {
+	background-image: url(images/green-2d-shield.jpg);
+}
+.dropdown .dropdownImg.support {
+	background-image: url(images/green-2d-shield.jpg);
+}
+.dropdown .dropdownImg.blog {
+	background-image: url(images/green-2d-shield.jpg);
+}
+.dropdown .dropdownImg.newsletter {
+	background-image: url(images/news-feed/newsletter2.jpg);
+}
+
+.stickydropdown {
+	top: 80px;
+}
+
+/******Google Search Input***************/
+
+header .searchWrap {
+	position: relative;
+	bottom: 11px;
+}
+
+header .searchWrap > div {
+	width: 185px;
+}
+
+header .searchWrap > div .gsc-control-cse, header .searchWrap > div .gsc-control-cse-en {
+	padding: 0;
+	background-color: initial;
+	border: none;
+}
+
+header .searchWrap > div form.gsc-search-box, header .searchWrap > div form.gsc-search-box table.gsc-search-box {
+	margin: 0;
+}
+
+header .searchWrap > div form.gsc-search-box, header .searchWrap > div form.gsc-search-box table.gsc-search-box td {
+	padding: 3px;
+	padding-right: 0;
+}
+
+header .searchWrap > div form.gsc-search-box table.gsc-search-box td .gsc-input-box {
+	border: none;
+	height: 0;
+	border-radius: 3px;
+}
+
+header .searchWrap > div form.gsc-search-box table.gsc-search-box td .gsc-input-box input {
+	background-position: 2px 3px !important;
+	border-radius: 2px;
+	padding-left: 5px !important;
+
+}
+
+header .searchWrap > div form.gsc-search-box table.gsc-search-box .gsc-search-button {
+	display: none;
+}
+
+header .searchMobileMenu {
+	margin-bottom: 15px;
+}
+
+header .searchMobileMenu .gsc-input-box {
+	border: none;
+	border-radius: 3px;
+}
+
+header .searchMobileMenu .gsc-control-cse.gsc-control-cse-en {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background-color: initial;
+}
+
+header .searchMobileMenu .gsc-search-button {
+	display: none;
+}
+
+header .searchMobileMenu .gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding: 0;
+}
+
+/****************************/
+
+
+
+/*************************/
+#wrap.bgImg {
+	background-color: #ccc;
+}
+
+main {
+	margin-top: 90px;
+}
+
+main.textPage {
+	margin-top: 110px;
+	padding: 0 30px;
+}
+
+main.parkPage {
+	background-color: #ddd;
+	padding: 0 60px;
+	margin-top: 110px;
+}
+
+div.aw-widget-current-inner {
+	z-index: 0;
+}
+
+main.parkPage .tabDesc .col {
+	float: left;
+	width: 50%;
+	padding: 0 30px;
+	margin: 50px 0 40px;
+}
+
+main.parkPage #parkInfoDesc .col {
+	padding-left: 100px;
+}
+
+main.parkPage #parkInfoDesc .col:first-child {
+	border-right: 1px solid #ddd;
+	padding-left: 60px;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom {
+	clear: both;
+	padding: 20px 0 55px;
+	border-top: 1px solid #ddd;
+	margin: 0 30px;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom .iconsWrap {
+	float: left;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom .iconsWrap img {
+	margin: 0 5px 5px 0;
+}
+
+main.parkPage #parkInfoDesc .infoTabBottom .btn {
+	float: right;
+	margin: 10px 0;
+}
+
+main.parkPage #gettingHereDesc .left {
+	width: 75%;
+}
+
+main.parkPage #gettingHereDesc .right {
+	width: 25%;
+}
+
+main.parkPage #gettingHereDesc .right iframe {
+	width: 100%;
+	height: 200px;
+}
+
+main.parkPage .tabDescWrap {
+	clear: both;
+}
+
+main.parkPage .tabsWrap .tab {
+	background-color: #999;
+	color: #ddd;
+	float: left;
+	border-left: 1px solid #000;
+	padding: 10px 5px;
+	width: 25%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+main.parkPage .tabsWrap .tab .fa-arrow-right {
+	display: none;
+	float: right;
+	margin-top: 3px;
+}
+
+main.parkPage .tabsWrap .tab:hover {
+	color: #fff;
+}
+
+main.parkPage .tabsWrap .tab.active {
+	background-color: #fff;
+	color: #333;
+}
+
+main.parkPage .tabsWrap .tab:first-child {
+	border-left: none;
+}
+
+main.parkPage .tabsWrap .tab .fa {
+	margin-right: 5px;
+	font-size: 18px;
+	position: relative;
+	top: 1px;
+}
+
+main.parkPage .tabDesc {
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+	display: none;
+}
+
+main.parkPage #mapsDesc .fa {
+	left: 0;
+}
+
+.activeDesc {
+	display: block !important;
+}
+
+main.parkPage .welcomeSec {
+	clear: both;
+}
+
+main.parkPage .welcomeSec>div {
+	float: left;
+	margin: 50px 0;
+}
+
+main.parkPage .welcomeSec .left {
+	width: 75%;
+	padding: 30px;
+	background-color:#fff;
+	box-shadow: 0 1px 2px 0 #555;
+	border-radius: 5px;
+}
+
+.poyRibbon {
+	float: right;
+	width: 100px;
+	margin-left: 10px;
+}
+
+main.parkPage .welcomeSec .facilitiesWrap h3 {
+	margin-bottom: 0;
+}
+
+main.parkPage .welcomeSec .facilitiesWrap .facility {
+	border-bottom: 1px solid #ddd;
+	padding-top: 15px;
+}
+
+main.parkPage .welcomeSec .facilitiesWrap .facility:first-child {
+	padding-top: 0;
+}
+
+main.parkPage .welcomeSec .facilitiesWrap .facility:last-child {
+	border-bottom: none;
+}
+
+main.parkPage .welcomeSec img.parkTextPhoto {
+	float: right;
+	width: 300px;
+	margin-left: 10px;
+}
+
+main.parkPage .welcomeSec .right {
+	width: 25%;
+	padding-left: 20px;
+}
+
+main.parkPage .welcomeSec .right .infoBlock {
+	
+	background-color: #336633;
+	color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+main.parkPage .welcomeSec .right .infoBlock.meetManager p {
+	font-size: 14px !important;
+	line-height: 24px !important;
+}
+
+main.parkPage .welcomeSec .right .infoBlock.meetManager img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+main.parkPage .welcomeSec .right ul {
+	padding-left: 20px;
+}
+
+main.parkPage .welcomeSec .right ul li {
+	list-style: disc;
+	margin-bottom: 10px;
+}
+
+main.parkPage .tabDesc .sec {
+	font-size: 16px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+main.parkPage .tabDesc .sec img {
+	position: absolute;
+	left: -32px;
+	width: 20px;
+}
+
+main.parkPage .tabDesc#mapsDesc {
+	padding: 40px 30px;
+}
+
+main.parkPage .tabDesc#mapsDesc .sec {
+	padding-left: 32px;
+}
+
+main.parkPage .tabDesc .sec:last-child {
+	margin-bottom: 0;
+}
+
+main.parkPage .tabDesc .sec .fa, .dogIcon {
+	position: absolute;
+	font-size: 20px;
+	color: #999;
+	left: -30px;
+}
+
+.parkPagePhotoIcon {
+	width: 25px;
+}
+
+main.parkPage #activitiesDesc {
+	padding: 40px 80px;
+}
+
+main.parkPage #activitiesDesc .sec:last-child {
+	margin-bottom: 0;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon {
+	position: absolute;
+	left: -50px;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon.hikingIcon {
+	top: -2px;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon.swimmingIcon {
+	top: 2px;
+}
+
+main.parkPage #activitiesDesc .sec .parkPagePhotoIcon.horseshoeIcon {
+	top: 2px;
+}
+
+main.parkPage .tabDesc .dogIcon {
+	left: -37px;
+}
+
+#myCarousel .welcomeOverlay {
+	position: absolute;
+	color: #fff;
+	z-index: 1;
+	letter-spacing: 1px;
+	width: 100%;
+	background: rgba(0,0,0,.3);
+	padding: 10px 20px;
+	bottom: 0;
+	box-shadow: 0px 2px 4px 0px #999;
+}
+
+main.parkPage #myCarousel .welcomeOverlay {
+	box-shadow: none;
+}
+
+.toggleControls {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	cursor: pointer;
+	color: #aaa;
+}
+
+.toggleControls .fa-arrow-up {
+	display: none;
+	position: absolute;
+	left: -225px;
+	transform: rotate(270deg);
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	min-height: 140px;
+}
+
+#myCarousel .welcomeOverlay h1 {
+	font-size: 46px;
+}
+
+.carousel-caption {
+	width: 100%;
+	left: 0 !important;
+	text-align: right;
+	padding-right: 30px;
+	padding-bottom: 0;
+}
+
+.carousel-indicators {
+	width: 100%;
+	left: 0 !important;
+	text-align: right;
+	padding-right: 30px;
+	margin-left: 0;
+	bottom: -5px;
+	z-index: 1;
+}
+
+.parkCarousel .welcomeOverlay h1 {
+	font-weight: normal;
+}
+
+.parkCarousel .welcomeOverlay h1 span {
+	font-weight: bold;
+}
+
+.parkCarousel .carousel-caption {
+	display: none;
+}
+
+.carousel-control {
+	background-image: none !important;
+}
+
+/*********************************/
+
+
+#mission {
+	background-color:#fefefe;
+	padding: 40px 20px;
+}
+
+#vidWrap {
+	width: 400px;
+	margin: 60px auto 25px;
+}
+
+#vidWrap video {
+	width: 100%;
+}
+
+main.parkPage #mission {
+	padding: 0;
+	box-shadow: 0 1px 2px 0 #555;
+	border-radius: 0 0 5px 5px;
+}
+
+#mission p {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+main.textPage .pageTitle {
+	margin: 0 -30px 50px;
+	padding-bottom: 10px;
+	background-image: url(images/wide/grr-agnes-canoeing.jpg);
+	background-size: cover;
+	height: 290px;
+	text-align: center;
+	padding-top: 110px;
+	border-bottom: 1px solid darkgreen;
+}
+
+main.textPage .pageTitle.day-use {
+	background-image: url(images/wide/elmore-field.jpg);
+}
+main.textPage .pageTitle.reservations {
+	background-image: url(images/wide/group-canoeing.jpg);
+}
+main.textPage .pageTitle.fees {
+	background-image: url(images/wide/rafting.jpg);
+}
+
+main.textPage .pageTitle h1 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 1px #333;
+}
+
+#textWrap {
+	position: relative;
+	height: 100%;
+}
+
+#textWrap p {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#textWrap > div {
+	float: left;
+}
+
+#textWrap .textMain {
+	width: 75%;
+	overflow: scroll;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+	padding-bottom: 100px;
+}
+#textWrap .gradientBlocker {
+	background: linear-gradient(rgba(255,255,255,.0), rgba(255,255,255,.9));
+	height: 15%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+#textWrap .textMain .textSec {
+	margin-bottom: 40px;
+}
+
+#textWrap .textMain .textSec ul {
+	padding-left: 25px;
+	margin-bottom: 20px;
+}
+
+#textWrap .textMain .textSec ul li {
+	font-size: 16px;
+	list-style: disc;
+	line-height: 30px;
+}
+
+#textWrap .textMain .textSec h3 {
+	font-weight: bold;
+}
+
+#textWrap .textMain .textSec .sub {
+	padding-left: 25px;
+	margin: 20px 0;
+}
+
+#textWrap .textMain .textSec .sub h4 {
+	font-weight: bold;
+}
+
+#textWrap .textMain .textSec .sub p {	
+	line-height: 22px;
+}
+
+#textWrap .textMain .textSec .parkRegion {
+	margin: 10px 0;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+#textWrap .textAside {
+	width: 25%;
+	padding-left: 50px;
+}
+
+#textWrap .textAside ul {
+	padding-left: 15px;
+}
+
+#textWrap .textAside ul li {
+	line-height: 30px;
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+#textWrap .textAside ul li:last-child {
+	border-bottom: none;
+}
+
+
+/*********NEWS GRID**********/
+
+section#newsFeed {
+	background-color: #eee;
+	padding: 80px 20px 120px;
+}
+
+section#newsFeed h2 {
+	text-align: center;
+	width: 375px;
+	margin: 0 auto 75px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+#newsFeedGrid {	
+	margin: 0 auto;
+	width: 870px;
+}
+
+#newsFeedGrid .newsFeedRow {
+	height: 375px;
+	margin-bottom: 20px;
+}
+
+#newsFeedGrid .newsFeedRow:last-child {
+	margin-bottom: 0;
+}
+
+#newsFeedGrid .item-anchor {
+	float: left;
+	box-shadow: 1px 3px 3px #999;
+	overflow: hidden;
+	margin-right: 15px;
+	background-color: #fff;
+	height: 100%;
+	display: block;
+	position: relative;
+	text-decoration: none !important;
+}
+
+#newsFeedGrid .item-anchor img {
+	width: 100%;
+	transition: 1s;
+}
+
+#newsFeedGrid .newsFeedRow .item-anchor:last-child, #newsFeedGrid .newsFeedRow .item-anchor-square-wrap:last-child {
+	margin-right: 0 !important;
+}
+
+#newsFeedGrid .item-anchor-small, #newsFeedGrid .item-anchor-square-wrap {
+	width: 162px;
+}
+
+#newsFeedGrid .item-anchor .fauxLink {
+	color: darkgreen;
+	transition: .3s;
+}
+
+#newsFeedGrid .item-anchor:hover .fauxLink {
+	color: green;
+	text-decoration: underline;
+}
+
+#newsFeedGrid .item-anchor-large {
+	width: 339px;
+}
+
+#newsFeedGrid .item-anchor-square-wrap {
+	float: left;
+	height: 100%;
+	margin-right: 15px;
+}
+
+#newsFeedGrid .item-anchor-square-wrap .item-anchor-square {
+	height: 180px;
+	z-index: 1;
+	margin-bottom: 15px;
+	float: none;
+	width: 100%;
+}
+
+#newsFeedGrid .item-anchor .textSec {
+	padding: 15px 10px;
+}
+
+#newsFeedGrid .item-anchor .textSec h4 {
+	line-height: 24px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	transition: .3s;
+}
+
+#newsFeedGrid .item-anchor .textSec h4, #newsFeedGrid .item-anchor .textSec p {
+	margin: 0;
+	color: #333;
+}
+
+#newsFeedGrid .item-anchor .textSec.opaque {
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	bottom: -110px;
+	height: 100%;
+	width: 100%;
+	transition: .3s;
+}
+
+#newsFeedGrid .item-anchor .textSec.opaque.campingAvailability {
+	bottom: -86px;
+}
+
+#newsFeedGrid .item-anchor-large .textSec.opaque {
+	bottom: -305px;
+}
+
+#newsFeedGrid .item-anchor:hover .textSec.opaque {
+	bottom: 0 !important;
+}
+
+#newsFeedGrid .item-anchor .textSec.opaque h4, #newsFeedGrid .item-anchor .textSec.opaque p {
+	color: #eee;
+}
+
+#newsFeedGrid .item-anchor .imgWrap {
+	overflow: hidden;
+	height: 100%;
+	background-size: cover;
+	transition: 1s;
+	background-repeat: no-repeat;
+}
+
+#newsFeedGrid .item-anchor.item-anchor-small .imgWrap {
+	height: auto;
+}
+
+#newsFeedGrid .item-anchor.item-anchor-large .imgWrap#cookoff {
+	background-image: url(images/news-feed/cookoff-ad-sm.jpg);
+}
+
+#newsFeedGrid .item-anchor.item-anchor-square .imgWrap#campingAvailability {
+	background-image: url(images/news-feed/family-camping.jpg);
+}
+
+#newsFeedGrid .item-anchor.item-anchor-square .imgWrap#newsletter {
+	background-image: url(images/news-feed/newsletter.jpg);
+}
+
+#newsFeedGrid .item-anchor:hover .imgWrap img, #newsFeedGrid .item-anchor.item-anchor-square:hover .imgWrap, #newsFeedGrid .item-anchor.item-anchor-large:hover .imgWrap {
+	transform: scale(1.1);
+}
+
+#newsFeedGrid .item-anchor:hover .textSec.opaque{
+	background-color: rgba(0,0,0,.8);
+}
+
+#newsFeedGrid .item-anchor-small:hover .textSec h4 {
+	color: green;
+}
+
+#newsFeedGrid .item-anchor .textSec p {
+	font-weight: 100;
+	line-height: initial;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+/********BOTTOM PHOTO ROW*****************/
+section#bottomPhotos {
+	height: 300px;
+	text-align: center;
+	clear: both;
+}
+
+main.textPage section#bottomPhotos {
+	margin: 0 -30px;
+}
+
+main.parkPage section#bottomPhotos {
+	margin: 0 -60px;
+}
+
+section#bottomPhotos a.photo {
+	float: left;
+	width: 33.33333333%;
+	display: block;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	transition: .3s;
+	height: 100%;
+}
+
+section#bottomPhotos a.photo .photoOverlay {
+	background: rgba(0,0,0,.15);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: .3s;
+}
+
+section#bottomPhotos a.photo .photoOverlay:hover {
+	background: rgba(0,0,0,0);
+}
+
+section#bottomPhotos a.photo .photoOverlay h3 {
+	margin: 0;
+	letter-spacing: 1px;
+	padding: 20px 0;
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: #eee;
+	transition: .3s;
+	background: rgba(0,0,0,.6);
+}
+
+section#bottomPhotos a.photo .photoOverlay:hover h3 {
+	color: #fff;
+}
+
+section#bottomPhotos a.photo .photoOverlay h3 .fa {
+	margin-right: 10px;
+}
+
+section#bottomPhotos .photo.one {
+	background-image: url(images/toots-pops-burntrock.jpg);
+}
+section#bottomPhotos .photo.two {
+	background-image: url(images/news-feed/cookoff-ad-sm.jpg);
+}
+section#bottomPhotos .photo.three {
+	background-image: url(images/grr-dalton-tree.jpg);
+}
+
+
+/*********PARK FINDER SEC (for everything else, refer to parkfinder.css)**********/
+section#parkFinderSec {
+	margin: 50px 20px;
+}
+
+section#parkFinderSec h2 {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	width: 375px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+section#parkFinderSec p.instructions {
+	margin: 30px 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+/****************/
+
+
+
+footer {
+	clear: both;
+	height: 300px;
+	background: #1a3300;
+}
+
+footer .footerCol {
+	background: #1a3300;
+	width: 33.33333%;
+	float: left;
+	padding: 20px;
+	color: #ddd;
+}
+
+footer .footerCol ul li {
+	line-height: 28px;
+	font-size: 16px;
+}
+
+footer .footerCol ul li a {
+	color: #ccc;
+	transition: .3s;
+	text-decoration: none !important;
+}
+
+footer .footerCol ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+	padding-left: 5px;
+}
+
+footer h2 {
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.copyright {
+	margin-left: 20px;
+	font-size: 11px;
+}
+
+.copyright, .copyright a {
+	color: rgba(255,255,255,.3);
+	text-decoration: none !important;
+}
+
+.copyright a:hover {
+	color: rgba(255,255,255,.5);
+}
+
