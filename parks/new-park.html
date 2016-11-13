@@ -1,0 +1,292 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../assets/styles.css">
+	<link rel="icon" type="image/png" href="../assets/images/green-2d-shield.png">
+	<title>Test SP</title>
+</head>
+<body>
+	<div id="wrap">
+		
+
+
+
+		<main id="main" class="parkPage">
+			<div class="parkCarousel">
+				<div id="myCarousel" class="carousel slide carouselShowcase" data-ride="carousel">
+					<div class="welcomeOverlay">
+						<h1><span>TEST</span> State Park</h1>
+					</div>
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="customCarouselIndicator active"></li>
+					    <li data-target="#myCarousel" data-slide-to="1" class="customCarouselIndicator"></li>
+					    <li data-target="#myCarousel" data-slide-to="2" class="customCarouselIndicator"></li>
+					    <li data-target="#myCarousel" data-slide-to="3" class="customCarouselIndicator"></li>
+					</ol>
+
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<a href="">
+								<img src="../assets/images/wide/little-river-wide.jpg" alt="Little River State Park">
+							</a>
+						</div>
+						<div class="item">
+							<a href="">
+								<img src="../assets/images/wide/little-river-smoke-water.jpg" alt="Little River State Park">
+							</a>
+						</div>
+						<div class="item">
+							<a href="">
+								<img src="../assets/images/wide/little-river-foliage-canoe.jpg" alt="Little River State Park">
+							</a>
+						</div>
+						<div class="item">
+							<a href="">
+								<img src="../assets/images/wide/little-river-cabin.jpg" alt="Little River State Park">
+							</a>
+						</div>
+					</div>
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<section id="mission">
+				<div class="tabsWrap">
+					<div class="tab active" id="parkInfoTab">
+						<i class="fa fa-info-circle tabFa" aria-hidden="true"></i>
+						<span>park info</span>
+						<i class="fa fa-arrow-right" id="parkInfoArrow"></i>
+					</div>
+					<div class="tab" id="gettingHereTab">
+						<i class="fa fa-road tabFa" aria-hidden="true"></i>
+						<span>getting here</span>
+						<i class="fa fa-arrow-right" id="gettingHereArrow"></i>
+					</div>
+					<div class="tab" id="activitiesTab">
+						<i class="fa fa-soccer-ball-o" aria-hidden="true"></i>
+						<span>activities</span>
+						<i class="fa fa-arrow-right" id="activitiesArrow"></i>
+					</div>
+					<div class="tab" id="mapsTab">
+						<i class="fa fa-map tabFa" aria-hidden="true"></i>
+						<span>maps/resources</span>
+						<i class="fa fa-arrow-right" id="mapsArrow"></i>
+					</div>
+				</div>
+
+				<div class="tabDescWrap">
+					<div class="tabDesc activeDesc" id="parkInfoDesc">
+						<div class="col">
+							<div class="sec">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span><a href="tel:8022447103">802.244.7103</a></span>
+							</div>
+							<div class="sec">
+								<i class="fa fa-location-arrow" aria-hidden="true"></i>
+								<span>3444 Little River Rd.<br><span>Waterbury, Vermont 05676</span></span>
+							</div>
+							<div class="sec">
+								<i class="fa fa-calendar"></i>
+								<span><strong>Season:</strong> May 19th - October 22</span>
+							</div>
+							
+						</div>
+						<div class="col">
+							<div class="sec">
+								<i class="fa fa-clock-o" aria-hidden="true"></i>
+								<span><strong>Day Use Hours:</strong> 10am - official sunset</span>
+							</div>
+							<div class="sec">
+								<img src="../assets/images/icons/camping-whiteBg.jpg" alt="Camping">
+								<span><strong>Camping:</strong> 81 tent-sites, 20 lean-to sites, 5 cabins</span>
+							</div>
+							<div class="sec">
+								<img src="../assets/images/icons/pet-on-leash-whiteBg.jpg" alt="Pets">
+								<span><strong>Pets</strong> are welcome at the park, but are not permitted in the beach area or in the cabins.</span>
+							</div>
+						</div>
+						<div class="infoTabBottom">
+							<div class="iconsWrap">
+								<img class="tooltipFunc" src="../assets/images/icons/sun.jpg" title="Day Use" alt="Day Use">
+								<img class="tooltipFunc" src="../assets/images/icons/camping.jpg" title="Camping" alt="Camping">
+								<img class="tooltipFunc" src="../assets/images/icons/cabin.jpg" title="Cabins" alt="Cabins">
+								<img class="tooltipFunc" src="../assets/images/icons/shower.jpg" title="Coin-operated Showers" alt="Coin-operated Showers">
+								<img class="tooltipFunc" src="../assets/images/icons/picnic-table.jpg" title="Picnic Area" alt="Picnic Area">
+								<img class="tooltipFunc" src="../assets/images/icons/event-center.jpg" title="Nature Center" alt="Nature Center">
+								<img class="tooltipFunc" src="../assets/images/icons/playground.jpg" title="Playground" alt="Playground">
+								<img class="tooltipFunc" src="../assets/images/icons/boat-launch.jpg" title="Boat Launch" alt="Boat Launch">
+								<img class="tooltipFunc" src="../assets/images/icons/small-boat-access.jpg" title="Small Boat Access" alt="Small Boat Access">
+								<img class="tooltipFunc" src="../assets/images/icons/wheelchair.jpg" title="Wheelchair Accessible" alt="Wheelchair Accessible">
+								<img class="tooltipFunc" src="../assets/images/icons/hiking.jpg" title="Hiking" alt="Hiking">
+								<img class="tooltipFunc" src="../assets/images/icons/swimming.jpg" title="Swimming Area" alt="Swimming Area">
+								<img class="tooltipFunc" src="../assets/images/icons/fishing.jpg" title="Fishing" alt="Fishing">
+								<img class="tooltipFunc" src="../assets/images/icons/boat-rental.jpg" title="Boat Rentals" alt="Boat Rentals">
+								<img class="tooltipFunc" src="../assets/images/icons/rv-sanitary-station.jpg" title="RV Sanitary Station" alt="RV Sanitary Station">
+							</div>
+							<a class="btn btn-green" href="https://plus.google.com/u/0/photos/106278646145892526798/albums/5441854619675995265" target="_blank">Photo Gallery >></a>
+						</div>
+					</div>
+					<div class="tabDesc" id="gettingHereDesc">
+						<div class="col left">
+							<div class="sec">
+								<span><strong>From the junction of VT Route 100 and US Route 2:</strong> West on U.S. 2, then 3-1/2 mi. north on Little River Rd. Located 30 miles south of Burlington just off I-89.</span>
+							</div>
+						</div>
+						<div class="col right">
+							<div class="sec">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22808.89115661254!2d-72.7673514!3d44.389835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x388e118ff33cb0e6!2sLittle+River+State+Park!5e0!3m2!1sen!2sus!4v1479012132264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="tabDesc" id="activitiesDesc">
+						<div class="sec">
+							<img class="parkPagePhotoIcon" src="../assets/images/icons/camping-whiteBg.jpg" alt="Camping">
+							<span><strong>Camping.</strong> Little River State Park has 81 tent/RV sites, 20 lean-to sites and 5 cabins.</span>
+						</div>
+						<div class="sec">
+							<img class="hikingIcon parkPagePhotoIcon" src="../assets/images/icons/hiking-whiteBg.jpg" alt="Hiking">
+							<span><strong>Hiking.</strong> Miles of hiking trails are available at the park.</span>
+						</div>
+						<div class="sec">
+							<img class="swimmingIcon parkPagePhotoIcon" src="../assets/images/icons/swimming-whiteBg.jpg" alt="Swimming">
+							<span><strong>Swimming.</strong> Multiple swimming areas.</span>
+						</div>
+						<div class="sec">
+							<img class="boatIcon parkPagePhotoIcon" src="../assets/images/icons/boat-whiteBg.jpg">
+							<span><strong>Boating.</strong> Boats are welcome at the park. Boats are available to rent for campers only. Day use visitors looking to rent boats, please visit <a href="waterbury-center.html">Waterbury Center State Park</a>.</span>
+						</div>
+					</div>
+					<div class="tabDesc" id="mapsDesc">
+						<div class="mapsDescCol">
+							<div class="sec">
+								<a href="../assets/pdf/interactive-maps/little-river.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Interactive campground map & guide</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="../assets/pdf/little-river-trails-guide.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Little River Trails Guide</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="../assets/pdf/little-river-history-hike.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Little River History Hike</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="../assets/pdf/little-river-nature-trail.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Little River Nature Trail</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="../assets/pdf/little-river-area-history.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Little River Area History Map</strong></span>
+								</a>
+							</div>
+						</div>
+						<div class="mapsDescCol">
+							<div class="sec">
+								<a href="../assets/pdf/waterbury-remote-plan.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Management Plan for Waterbury Reservoir Remote Campsites</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="../assets/pdf/waterbury-remote-map.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<span><strong>Waterbury Reservoir Remote Campsite Map</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="http://www.friendsofwaterburyreservoir.org/" target="_blank">
+									<i class="fa fa-external-link" aria-hidden="true"></i>
+									<span><strong>Friends of Waterbury Reservoir</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="https://www.vermontvacation.com/landing-pages/byways/green-mountain-byway" target="_blank">
+									<i class="fa fa-external-link" aria-hidden="true"></i>
+									<span><strong>The Green Mountain Byway</strong></span>
+								</a>
+							</div>
+							<div class="sec">
+								<a href="http://www.letterboxing.org/BoxView.php?boxnum=58601&boxname=Paddle,_PaddleC:%5CUsers%5Cjennym%5CDocuments%5CAdobe" target="_blank">
+									<i class="fa fa-external-link" aria-hidden="true"></i>
+									<span><strong>Letterboxing at Little River</strong></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="welcomeSec">
+					<div class="left">
+						<h2 id="welcome">Welcome</h2>
+						<iframe class="parkTextPhoto" width="560" height="315" src="https://www.youtube.com/embed/rVQYntVLGMQ" frameborder="0" allowfullscreen></iframe>
+						<p>In the early 1800s, pioneers cleared fields, rocks, and stumps in Ricker Basin and Cotton Brook. A settlement of 50 or so families once lived in this area. The hard demands of the land and weather forced younger generations to abandon the farms. Today, old cemeteries, sawmill remains, old town roads, bridges and many cellar holes can still be seen as evidence of a past community.</p>
+						<p>On November 3 and 4 of 1927, torrential rains caused local rivers to rise and drove residents to their roofs. Between 1935 and 1938 the Civilian Conservation Corps (CCC), in cooperation with the U.S. Army Corps of Engineers, constructed Waterbury Reservoir. The CCC camp here was a fully operating, thriving community with more than 80 buildings, and housing 2,000 men at its peak. Now, half a century later, only a few solitary chimneys and concrete foundations remain.</p>
+						<p>Today, Little River State Park is one of the most popular parks in central Vermont. Waterbury Reservoir is particularly favored for boating with a portion of the reservoir devoted to quieter uses. Angling for bass and trout is as popular here as water-skiing.</p>
+						<p>Enjoy swimming beaches, play areas, boat rentals and a launch, and miles of hiking and mountain bike trails in the adjacent Mt. Mansfield State Forest. Self-guided history and nature trails are located close to the camping area.</p>
+						<p>Little River State Park, which is part of Mt. Mansfield State Forest, primarily consists of a campground with 81 tent/RV sites, 20 lean-tos and five cabins. This is central Vermont's largest and most popular campground. Three of the four restrooms include hot showers ($). A sanitary dump station is available, but no hookups. Within the campground, there are swimming beaches, play areas, a boat launch, ball field, and boat rentals for campers. (For day use boat rentals and swimming, see <a href="waterbury-center.html">Waterbury Center State Park</a>). Adjacent to the park are miles of hiking trails for campers and day users that take in the rich cultural and natural history of the area.</p>
+						<div class="parkPageTextBottomSec">
+							<h3>Park Interpreter Programs:</h3>
+							<div class="sec">
+								<p>There is a Park Interpreter offering fun, hands-on activities at this park. Interpreters are park staff solely dedicated to helping you learn more about the natural and cultural history of this park.</p>
+								<img class="parkTextPhoto" src="../assets/images/little-river-interpreter.jpg" alt="Little River Interpreter"> 
+								<p>Are you curious about some of the animals that live in the park? Are you wondering the history of this place you love to visit? Get answers to all your questions by attending interpretive programs, or by having a chat with the Park Interpreter during your visit. Some popular activities available are night hikes, nature crafts, campfire programs, amphibian explorations, and nature games.</p>
+								<p>Check out the calendar of current events to see some of the programs planned during your visit, look for program schedules displayed in the park, and stop by the nature center to learn more. Click here for a calendar of events at all parks on our department website </p>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="infoBlock">
+							<a href="http://www.accuweather.com/en/us/waterbury-vt/05676/weather-forecast/341229" class="aw-widget-legal">
+							<!--
+							By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+							-->
+							</a><div id="awcc1479016052491" class="aw-widget-current"  data-locationkey="341229" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1479016052491"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+						</div>
+						<div class="infoBlock">
+							<h4>Nearby Activities</h4>
+							<ul>
+								<li>ZipTour and Treetop Adventures in Stowe</li>
+								<li>Stowe Gondolas</li>
+								<li>Trapp Family Lodge</li>
+								<li>Johnson Woolen Mills</li>
+								<li>Ben and Jerry's Ice Cream Factory</li>
+								<li>State Capital</li>
+							</ul>
+						</div>
+						<div class="infoBlock meetManager">
+							<h4>Meet the Manager</h4>
+							<img src="../assets/images/park-managers/jess-halterman.jpg" alt="Jess Halterman">
+							<p><strong>Jess Halterman</strong> is the park manager at Little River State Park. Marc has experience working in national parks, having served as interpreter at Acadia National Park for several years. In his free time, Marc enjoys playing soccer and the trumpet.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+		
+	</div>
+	<script src="../assets/custom.js"></script>
+</body>
+
+</html>
