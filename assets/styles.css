@@ -875,10 +875,8 @@ main.parkPage #myCarousel .welcomeOverlay {
 #vidWrap {
 	width: 400px;
 	margin: 60px auto 25px;
-}
-
-#vidWrap video {
-	width: 100%;
+	position: relative;
+	right: 80px;
 }
 
 main.parkPage #mission {
