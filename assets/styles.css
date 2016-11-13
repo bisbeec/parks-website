@@ -662,24 +662,24 @@ main.parkPage .welcomeSec .left {
 	margin-left: 10px;
 }
 
-main.parkPage .welcomeSec .facilitiesWrap h3 {
+main.parkPage .welcomeSec .parkPageTextBottomSec h3 {
 	margin-bottom: 0;
 }
 
-main.parkPage .welcomeSec .facilitiesWrap .facility {
+main.parkPage .welcomeSec .parkPageTextBottomSec .sec {
 	border-bottom: 1px solid #ddd;
 	padding-top: 15px;
 }
 
-main.parkPage .welcomeSec .facilitiesWrap .facility:first-child {
+main.parkPage .welcomeSec .parkPageTextBottomSec .sec:first-child {
 	padding-top: 0;
 }
 
-main.parkPage .welcomeSec .facilitiesWrap .facility:last-child {
+main.parkPage .welcomeSec .parkPageTextBottomSec .sec:last-child {
 	border-bottom: none;
 }
 
-main.parkPage .welcomeSec img.parkTextPhoto {
+main.parkPage .welcomeSec .parkTextPhoto {
 	float: right;
 	width: 300px;
 	margin-left: 10px;
@@ -732,6 +732,15 @@ main.parkPage .tabDesc .sec img {
 
 main.parkPage .tabDesc#mapsDesc {
 	padding: 40px 30px;
+}
+
+main.parkPage .tabDesc#mapsDesc .mapsDescCol {
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 200px;
+}
+main.parkPage .tabDesc#mapsDesc .mapsDescCol:last-child {
+	margin-right: 0;
 }
 
 main.parkPage .tabDesc#mapsDesc .sec {
