@@ -105,6 +105,6 @@ $("#activitiesTab").click(function() {
     $("#activitiesArrow").addClass("arrowRotateDown");
 })
 
-/********THIS ADDS TOOLTIP FUNCTIONALITY TO ICONS********/
+/********THIS ADDS TOOLTIP FUNCTIONALITY********/
 $(document).ready(function() { 
-         $(".iconImgTitle").tooltip({ content: '<img src="http://icdn.pro/images/fr/a/v/avatar-barbe-brun-homme-utilisateur-icone-9665-128.png" />' }); });
+         $(".tooltipFunc").tooltip({ content: '<img src="http://icdn.pro/images/fr/a/v/avatar-barbe-brun-homme-utilisateur-icone-9665-128.png" />' }); });

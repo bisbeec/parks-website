@@ -445,6 +445,14 @@ header .searchWrap > div .gsc-control-cse, header .searchWrap > div .gsc-control
 	border: none;
 }
 
+table .fa-info-circle {
+	color: darkred;
+}
+
+table .tooltip-inner {
+	text-align: left;
+}
+
 header .searchWrap > div form.gsc-search-box, header .searchWrap > div form.gsc-search-box table.gsc-search-box {
 	margin: 0;
 }
@@ -951,11 +959,12 @@ main.textPage .pageTitle h1 {
 
 #textWrap .textMain .textSec h3 {
 	font-weight: bold;
+	color: #336600;
 }
 
 #textWrap .textMain .textSec .sub {
 	padding-left: 25px;
-	margin: 20px 0;
+	margin: 20px 0 30px;
 }
 
 #textWrap .textMain .textSec .sub h4 {
