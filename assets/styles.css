@@ -533,18 +533,26 @@ div.aw-widget-current-inner {
 
 main.parkPage .tabDesc .col {
 	float: left;
-	width: 50%;
+	width: 33.3333%;
 	padding: 0 30px;
 	margin: 50px 0 40px;
 }
 
 main.parkPage #parkInfoDesc .col {
-	padding-left: 100px;
+	padding-left: 60px;
+	border-right: 1px solid #ddd;
 }
 
-main.parkPage #parkInfoDesc .col:first-child {
-	border-right: 1px solid #ddd;
-	padding-left: 60px;
+main.parkPage #parkInfoDesc .col ul {
+	padding-left: 25px;
+}
+
+main.parkPage #parkInfoDesc .col ul li {
+	list-style: initial;
+}
+
+main.parkPage #parkInfoDesc .col:last-child {
+	border-right: none;
 }
 
 main.parkPage #parkInfoDesc .infoTabBottom {
