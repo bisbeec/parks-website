@@ -707,16 +707,6 @@ main.parkPage .welcomeSec .right .infoBlock {
 	border-radius: 3px;
 }
 
-main.parkPage .welcomeSec .right .infoBlock.meetManager p {
-	font-size: 14px !important;
-	line-height: 24px !important;
-}
-
-main.parkPage .welcomeSec .right .infoBlock.meetManager img {
-	width: 100%;
-	margin-bottom: 15px;
-}
-
 main.parkPage .welcomeSec .right ul {
 	padding-left: 20px;
 }
