@@ -911,6 +911,9 @@ main.textPage .pageTitle.reservations {
 main.textPage .pageTitle.fees {
 	background-image: url(images/wide/rafting.jpg);
 }
+main.textPage .pageTitle.cabins {
+	background-image: url(images/wide/cabin.jpg);
+}
 
 main.textPage .pageTitle h1 {
 	color: #fff;
@@ -962,6 +965,14 @@ main.textPage .pageTitle h1 {
 	font-size: 16px;
 	list-style: disc;
 	line-height: 30px;
+}
+#textWrap .textMain .textSec table ul {
+	margin: 0;
+}
+
+#textWrap .textMain .textSec table ul li {
+	line-height: 24px;
+	list-style: square;
 }
 
 #textWrap .textMain .textSec h3 {
@@ -1269,16 +1280,15 @@ section#parkFinderSec p.instructions {
 
 footer {
 	clear: both;
-	height: 300px;
 	background: #1a3300;
 }
 
 footer .footerCol {
-	background: #1a3300;
 	width: 33.33333%;
 	float: left;
 	padding: 20px;
 	color: #ddd;
+	margin-bottom: 20px;
 }
 
 footer .footerCol ul li {
@@ -1286,13 +1296,13 @@ footer .footerCol ul li {
 	font-size: 16px;
 }
 
-footer .footerCol ul li a {
+footer a {
 	color: #ccc;
 	transition: .3s;
 	text-decoration: none !important;
 }
 
-footer .footerCol ul li a:hover {
+footer a:hover {
 	color: #fff;
 	text-decoration: none;
 	padding-left: 5px;
@@ -1303,17 +1313,57 @@ footer h2 {
 	color: #fff;
 }
 
-.copyright {
-	margin-left: 20px;
+footer .footerBottom {
+	clear: both;
+	border-top: 1px solid #555;
+	font-size: 12px;
+	padding: 10px 0 20px 0;
+	margin: 0 20px;
+}
+
+footer .footerBottom ul {
+	display: inline-block;
+}
+
+footer .footerBottom ul.right {
+	float: right;
+}
+
+footer .footerBottom ul li {
+	display: inline-block;
+	border-right: 1px solid #fff;
+	padding: 0 14px 0 12px;
+}
+
+footer .footerBottom ul li:first-child {
+	padding-left: 0;
+}
+
+footer .footerBottom ul li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+
+footer .footerBottom ul li, footer .footerBottom ul li a {
+	color: #999;
+}
+
+footer .footerBottom ul li a:hover {
+	text-decoration: underline !important;
+	padding: 0;
+}
+
+.cbCopyright {
 	font-size: 11px;
 }
 
-.copyright, .copyright a {
+.cbCopyright, .cbCopyright a {
 	color: rgba(255,255,255,.3);
 	text-decoration: none !important;
+	padding: 0 !important;
 }
 
-.copyright a:hover {
+.cbCopyright a:hover {
 	color: rgba(255,255,255,.5);
 }
 
