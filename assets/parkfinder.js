@@ -96,6 +96,84 @@ $("#littleriverPointer").click(function() {
 	$(".parkInfo").removeClass("infoShow");
 	$("#littleriverInfo").addClass("infoShow");
 })
+$("#camelshumpPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#camelshumpInfo").addClass("infoShow");
+})
+$("#lakecarmiPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#lakecarmiInfo").addClass("infoShow");
+})
+$("#northheroPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#northheroInfo").addClass("infoShow");
+})
+$("#alburgdunesPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#alburgdunesInfo").addClass("infoShow");
+})
+$("#knightislandPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#knightislandInfo").addClass("infoShow");
+})
+$("#woodsislandPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#woodsislandInfo").addClass("infoShow");
+})
+$("#killkarePointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#killkareInfo").addClass("infoShow");
+})
+$("#burtonislandPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#burtonislandInfo").addClass("infoShow");
+})
+$("#knightpointPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#knightpointInfo").addClass("infoShow");
+})
+$("#grandislePointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#grandisleInfo").addClass("infoShow");
+})
+$("#sandbarPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#sandbarInfo").addClass("infoShow");
+})
+$("#niquettebayPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#niquettebayInfo").addClass("infoShow");
+})
+$("#mtphiloPointer").click(function() {
+	$(".parkPointer").removeClass("clickedPointer");
+	$(this).addClass("clickedPointer");	
+	$(".parkInfo").removeClass("infoShow");
+	$("#mtphiloInfo").addClass("infoShow");
+})
 
 
 

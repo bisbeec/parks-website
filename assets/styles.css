@@ -190,6 +190,16 @@ header li a {
 	padding: 12px 18px 13px;
 }
 
+.orangeBtn {
+	background-color: #ff6600;
+	color: #fff !important;
+	transition: .3s;
+}
+
+.orangeBtn:hover {
+	background-color: #e65c00;
+}
+
 header .reserveButtonHeader {
 	color: #fff;
 	background-color: #ff6600;
@@ -273,11 +283,11 @@ header .reserveButtonHeader.sticky {
 }
 
 .dropdown .dropMid .dropdownHeading {
-	background-image: url(images/news-feed/family-camping.jpg);
+	background-image: url(images/small/family-camping2.jpg);
 }
 
-.dropdown .dropright .dropdownHeading {
-	background-image: url(images/family-picnic.jpg);
+.dropdown .dropRight .dropdownHeading {
+	background-image: url(images/small/family-picnic.jpg);
 }
 
 .dropdown a {
@@ -354,47 +364,47 @@ header .reserveButtonHeader.sticky {
 }
 
 .dropdown .dropdownImg.camping {
-	background-image: url(images/news-feed/family-camping2.jpg);
+	background-image: url(images/small/family-camping2.jpg);
 }
 .dropdown .dropdownImg.hiking {
-	background-image: url(images/hiking-family.jpg);
+	background-image: url(images/small/hiking-family.jpg);
 }
 .dropdown .dropdownImg.swimming {
-	background-image: url(images/girls-swimming.jpg);
+	background-image: url(images/small/girls-swimming.jpg);
 }
 .dropdown .dropdownImg.boating {
-	background-image: url(images/kayak-elmore.jpg);
+	background-image: url(images/small/kayak-elmore.jpg);
 }
 .dropdown .dropdownImg.fishing {
-	background-image: url(images/girl-staff-fishing.jpg);
+	background-image: url(images/small/girl-staff-fishing.jpg);
 }
 .dropdown .dropdownImg.picnics {
-	background-image: url(images/family-picnic.jpg);
+	background-image: url(images/small/family-picnic.jpg);
 	margin-right: 0;
 }
 .dropdown .dropdownImg.nature {
-	background-image: url(images/elmore/elmore-fieldSmall.jpg);
+	background-image: url(images/small/little-river-interpreter.jpg);
 }
 .dropdown .dropdownImg.quietTime {
-	background-image: url(images/elmore/lake-from-ft.jpg);
+	background-image: url(images/small/lake-carmi-dock.jpg);
 }
 .dropdown .dropdownImg.otherActivities {
-	background-image: url(images/biking-people.jpg);
+	background-image: url(images/small/biking-people.jpg);
 }
 .dropdown .dropdownImg.parkEvents {
-	background-image: url(images/elmore/pavilion-kids.jpg);
+	background-image: url(images/small/cookoff-ad-sm.jpg);
 }
 .dropdown .dropdownImg.familyFun {
-	background-image: url(images/grr/fancybox/children-playing-in-waterFancy.jpg);
+	background-image: url(images/small/family-picnic-waterbury-center.jpg);
 }
 .dropdown .dropdownImg.ventureVt {
-	background-image: url(images/elmore/pavilion-kids.jpg);
+	background-image: url(images/small/venture-vt.jpg);
 }
 .dropdown .dropdownImg.news {
 	background-image: url(images/news-feed/cookoff-ad-sm.jpg);
 }
 .dropdown .dropdownImg.overview {
-	background-image: url(images/green-2d-shield.jpg);
+	background-image: url(images/small/cc-staff.jpg);
 }
 .dropdown .dropdownImg.regionalOffices {
 	background-image: url(images/green-2d-shield.jpg);
@@ -914,6 +924,9 @@ main.textPage .pageTitle.fees {
 main.textPage .pageTitle.cabins {
 	background-image: url(images/wide/cabin.jpg);
 }
+main.textPage .pageTitle.cottages {
+	background-image: url(images/wide/cottage.jpg);
+}
 
 main.textPage .pageTitle h1 {
 	color: #fff;
@@ -924,7 +937,7 @@ main.textPage .pageTitle h1 {
 
 #textWrap {
 	position: relative;
-	height: 100%;
+	height: 800px;
 }
 
 #textWrap p {
